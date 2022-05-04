@@ -1,0 +1,15 @@
+body {
+  font-family: 'Noto Sans', 'Roboto', sans-serif;
+  img {
+    display: block;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}

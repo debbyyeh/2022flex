@@ -1,0 +1,105 @@
+.banner {
+  background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png')
+    no-repeat center;
+  background-size: cover;
+  height: 496px;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+.logo {
+  background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg')
+    no-repeat center;
+  width: 220px;
+  height: 40px;
+}
+.barList {
+  li {
+    margin-left: 60px;
+  }
+  :nth-child(4) {
+    margin-left: 80px;
+  }
+  a {
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid #eaf0ed;
+    }
+  }
+}
+
+.productList {
+  width: 30%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  h2 {
+    background-color: #3f5d45;
+    padding: 16px;
+  }
+  ul {
+    border-left: 1px solid #eaf0ed;
+    border-right: 1px solid #eaf0ed;
+  }
+  a {
+    color: #3f5d45;
+    padding: 16px;
+    border-bottom: 1px solid #eaf0ed;
+  }
+}
+.allList {
+  background-color: #eaf0ed;
+}
+.productItem {
+  width: 65%;
+  ul {
+    flex-wrap: wrap;
+  }
+}
+.productCard {
+  text-align: center;
+}
+.itemName {
+  border: 1px solid #eaf0ed;
+  h3 {
+    width: 60%;
+    padding: 13px 33px;
+    border-right: 1px solid #eaf0ed;
+  }
+  p {
+    width: 40%;
+    padding: 13px 20px 13px 25px;
+    font-weight: bold;
+  }
+}
+.productPic {
+  position: relative;
+}
+.highlights {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  background-color: #3f5d45;
+  color: #eaf0ed;
+  line-height: 20px;
+  padding: 10px;
+  width: 36px;
+}
+.like {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.addCart {
+  background-color: #eaf0ed;
+  font-weight: 600;
+  padding: 16px;
+  &:hover {
+    background-color: #3f5d45;
+    color: white;
+  }
+}
