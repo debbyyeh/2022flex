@@ -179,6 +179,11 @@ table {
           align-items: center;
 }
 
+.bg-hover:hover {
+  background-color: #3f5d45;
+  color: white;
+}
+
 body {
   font-family: "Noto Sans", "Roboto", sans-serif;
 }
@@ -188,18 +193,13 @@ body img {
 body a {
   display: block;
   text-decoration: none;
+  cursor: pointer;
 }
 body *,
 body *::before,
 body *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.banner {
-  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png") no-repeat center;
-  background-size: cover;
-  height: 496px;
 }
 
 .container {
@@ -211,6 +211,12 @@ body *::after {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg") no-repeat center;
   width: 220px;
   height: 40px;
+}
+
+.banner {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png") no-repeat center;
+  background-size: cover;
+  height: 496px;
 }
 
 .barList li {
@@ -248,18 +254,9 @@ body *::after {
   padding: 16px;
   border-bottom: 1px solid #eaf0ed;
 }
-.productList li:hover {
-  background-color: #3f5d45;
-}
-.productList li:hover a {
-  color: #eaf0ed;
-}
 
 .allList {
   background-color: #eaf0ed;
-}
-.allList:hover {
-  background-color: #3f5d45;
 }
 
 .productItem {
@@ -272,11 +269,15 @@ body *::after {
 
 .productCard {
   text-align: center;
+}
+
+.productPic {
   position: relative;
 }
 
 .itemName {
-  border: 1px solid #eaf0ed;
+  border-left: 1px solid #eaf0ed;
+  border-right: 1px solid #eaf0ed;
 }
 .itemName h3 {
   width: 60%;
@@ -310,8 +311,4 @@ body *::after {
   background-color: #eaf0ed;
   font-weight: 600;
   padding: 16px;
-}
-.addCart:hover {
-  background-color: #3f5d45;
-  color: white;
 }
