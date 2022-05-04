@@ -248,6 +248,10 @@ body *::after {
   color: #eaf0ed;
 }
 
+.allLists {
+  background-color: #eaf0ed;
+}
+
 .productContent {
   width: 65%;
 }
