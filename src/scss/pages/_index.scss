@@ -62,6 +62,7 @@
 }
 .productCard {
   text-align: center;
+  position: relative;
 }
 .itemName {
   border: 1px solid #eaf0ed;
@@ -76,9 +77,9 @@
     font-weight: bold;
   }
 }
-.productPic {
-  position: relative;
-}
+// .productPic {
+//   position: relative;
+// }
 .highlights {
   position: absolute;
   top: 0;

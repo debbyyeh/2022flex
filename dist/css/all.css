@@ -263,6 +263,7 @@ body *::after {
 
 .productCard {
   text-align: center;
+  position: relative;
 }
 
 .itemName {
@@ -277,10 +278,6 @@ body *::after {
   width: 40%;
   padding: 13px 20px 13px 25px;
   font-weight: bold;
-}
-
-.productPic {
-  position: relative;
 }
 
 .highlights {
