@@ -50,9 +50,18 @@
     padding: 16px;
     border-bottom: 1px solid #eaf0ed;
   }
+  li:hover {
+    background-color: #3f5d45;
+    a {
+      color: #eaf0ed;
+    }
+  }
 }
 .allList {
   background-color: #eaf0ed;
+  &:hover {
+    background-color: #3f5d45;
+  }
 }
 .productItem {
   width: 65%;
@@ -77,9 +86,6 @@
     font-weight: bold;
   }
 }
-// .productPic {
-//   position: relative;
-// }
 .highlights {
   position: absolute;
   top: 0;

@@ -248,9 +248,18 @@ body *::after {
   padding: 16px;
   border-bottom: 1px solid #eaf0ed;
 }
+.productList li:hover {
+  background-color: #3f5d45;
+}
+.productList li:hover a {
+  color: #eaf0ed;
+}
 
 .allList {
   background-color: #eaf0ed;
+}
+.allList:hover {
+  background-color: #3f5d45;
 }
 
 .productItem {
