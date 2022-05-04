@@ -133,32 +133,24 @@ table {
   border-spacing: 0;
 }
 
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
 .primary {
   color: #3f5d45;
 }
 
 .second {
   color: #eaf0ed;
-}
-
-.mr-20 {
-  margin-right: 20px;
-}
-
-.mb-20 {
-  margin-bottom: 20px;
-}
-
-.mb-30 {
-  margin-bottom: 30px;
-}
-
-.mt-40 {
-  margin-top: 40px;
-}
-
-.mb-60 {
-  margin-bottom: 60px;
 }
 
 .d-flex {
@@ -177,11 +169,6 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.bg-hover:hover {
-  background-color: #3f5d45;
-  color: white;
 }
 
 body {
@@ -209,96 +196,75 @@ body *::after {
 
 .logo {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg") no-repeat center;
-  width: 220px;
+  width: 230px;
   height: 40px;
+  white-space: nowrap;
+  text-indent: 101%;
+}
+
+.navList li {
+  margin-left: 60px;
+}
+.navList :nth-child(4) {
+  margin-left: 80px;
+}
+.navList a {
+  font-weight: bold;
+  color: #3f5d45;
+  border-bottom: 2px solid transparent;
+  padding: 10px;
+}
+.navList a:hover {
+  border-bottom: 2px solid #eaf0ed;
 }
 
 .banner {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png") no-repeat center;
   background-size: cover;
   height: 496px;
-}
-
-.barList li {
-  margin-left: 60px;
-}
-.barList :nth-child(4) {
-  margin-left: 80px;
-}
-.barList a {
-  font-weight: 600;
-  padding: 10px;
-  border-bottom: 2px solid transparent;
-}
-.barList a:hover {
-  border-bottom: 2px solid #eaf0ed;
+  margin-bottom: 60px;
 }
 
 .productList {
   width: 30%;
   text-align: center;
-  line-height: 40px;
   font-size: 24px;
-  font-weight: 600;
+  line-height: 40px;
 }
 .productList h2 {
   background-color: #3f5d45;
-  padding: 16px;
-}
-.productList ul {
-  border-left: 1px solid #eaf0ed;
-  border-right: 1px solid #eaf0ed;
+  padding: 16px 0;
+  color: #eaf0ed;
 }
 .productList a {
-  color: #3f5d45;
-  padding: 16px;
   border-bottom: 1px solid #eaf0ed;
+  border-right: 1px solid #eaf0ed;
+  border-left: 1px solid #eaf0ed;
+  color: #3f5d45;
+  padding: 16px 0;
+}
+.productList a:hover {
+  background-color: #3f5d45;
+  color: #eaf0ed;
 }
 
-.allList {
-  background-color: #eaf0ed;
-}
-
-.productItem {
+.productContent {
   width: 65%;
-}
-.productItem ul {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.productCard {
-  text-align: center;
 }
 
 .productPic {
   position: relative;
 }
 
-.itemName {
-  border-left: 1px solid #eaf0ed;
-  border-right: 1px solid #eaf0ed;
-}
-.itemName h3 {
-  width: 60%;
-  padding: 13px 33px;
-  border-right: 1px solid #eaf0ed;
-}
-.itemName p {
-  width: 40%;
-  padding: 13px 20px 13px 25px;
-  font-weight: bold;
-}
-
 .highlights {
-  position: absolute;
-  top: 0;
-  left: 20px;
   background-color: #3f5d45;
   color: #eaf0ed;
-  line-height: 20px;
-  padding: 10px;
   width: 36px;
+  padding: 10px;
+  letter-spacing: 1.5px;
+  top: 0;
+  left: 20px;
+  position: absolute;
 }
 
 .like {
@@ -307,8 +273,40 @@ body *::after {
   right: 20px;
 }
 
+.contentList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.productName {
+  text-align: center;
+}
+
+.itemName {
+  width: 60%;
+  border-right: 1px solid #eaf0ed;
+  border-left: 1px solid #eaf0ed;
+  padding: 14px;
+}
+
+.price {
+  width: 40%;
+  padding: 14px;
+  border-right: 1px solid #eaf0ed;
+}
+
 .addCart {
   background-color: #eaf0ed;
-  font-weight: 600;
+  color: #3f5d45;
   padding: 16px;
+}
+.addCart:hover {
+  background-color: #3f5d45;
+  color: #eaf0ed;
 }

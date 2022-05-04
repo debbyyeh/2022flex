@@ -1,27 +1,23 @@
+// 距離
+.pt-30 {
+  padding-top: 30px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+// color
 .primary {
   color: #3f5d45;
 }
 .second {
   color: #eaf0ed;
 }
-// 4px為一單位
-.mr-20 {
-  margin-right: 20px;
-}
-.mb-20 {
-  margin-bottom: 20px;
-}
-.mb-30 {
-  margin-bottom: 30px;
-}
-.mt-40 {
-  margin-top: 40px;
-}
-.mb-60 {
-  margin-bottom: 60px;
-}
 
-// flex
+// 排版
 .d-flex {
   display: flex;
 }
@@ -30,10 +26,4 @@
 }
 .alc {
   align-items: center;
-}
-
-// hover
-.bg-hover:hover {
-  background-color: #3f5d45;
-  color: white;
 }
