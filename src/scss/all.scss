@@ -1,5 +1,9 @@
 @import './setting/reset';
+@import './setting/variable';
 @import './setting/utilities';
 @import './setting/base';
+
+@import './layout/header';
+@import './layout/footer';
 
 @import './pages/index';

@@ -2,6 +2,7 @@ body {
   font-family: 'Noto Sans', 'Roboto', sans-serif;
   img {
     display: block;
+    width: 100%;
   }
   a {
     display: block;
@@ -12,5 +13,14 @@ body {
   *::before,
   *::after {
     box-sizing: border-box;
+  }
+  input {
+    outline: none;
+    border-radius: 0;
+    border: none;
+    background-color: $second;
+    &:focus {
+      outline: none;
+    }
   }
 }

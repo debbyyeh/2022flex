@@ -1,4 +1,10 @@
 // 距離
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-105 {
+  margin-bottom: 105px;
+}
 .pt-30 {
   padding-top: 30px;
 }
@@ -8,22 +14,28 @@
 .pb-20 {
   padding-bottom: 20px;
 }
-
-// color
-.primary {
-  color: #3f5d45;
+.w-100 {
+  width: 100%;
 }
-.second {
-  color: #eaf0ed;
+.h-100 {
+  height: 100%;
 }
 
 // 排版
 .d-flex {
   display: flex;
 }
+.jcc {
+  justify-content: center;
+}
 .jcsb {
   justify-content: space-between;
 }
 .alc {
   align-items: center;
+}
+
+// 背景顏色
+.bg-light {
+  background-color: $second;
 }

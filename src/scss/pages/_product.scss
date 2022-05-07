@@ -1,0 +1,82 @@
+.banner {
+  background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png')
+    no-repeat center;
+  background-size: cover;
+  height: 496px;
+  margin-bottom: 60px;
+}
+
+.productList {
+  width: 30%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  h2 {
+    background-color: #3f5d45;
+    padding: 16px 0;
+    color: #eaf0ed;
+  }
+  a {
+    border-bottom: 1px solid #eaf0ed;
+    border-right: 1px solid #eaf0ed;
+    border-left: 1px solid #eaf0ed;
+    color: #3f5d45;
+    padding: 16px 0;
+    &:hover {
+      background-color: #3f5d45;
+      color: #eaf0ed;
+    }
+  }
+}
+.allLists {
+  background-color: #eaf0ed;
+}
+.productContent {
+  width: 65%;
+}
+.productPic {
+  position: relative;
+}
+.highlights {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+  width: 36px;
+  padding: 10px;
+  letter-spacing: 1.5px;
+  top: 0;
+  left: 20px;
+  position: absolute;
+}
+.like {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.contentList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.productName {
+  text-align: center;
+}
+.itemName {
+  width: 60%;
+  border-right: 1px solid #eaf0ed;
+  border-left: 1px solid #eaf0ed;
+  padding: 14px;
+}
+.price {
+  width: 40%;
+  padding: 14px;
+  border-right: 1px solid #eaf0ed;
+}
+.addCart {
+  background-color: #eaf0ed;
+  color: #3f5d45;
+  padding: 16px;
+  &:hover {
+    background-color: #3f5d45;
+    color: #eaf0ed;
+  }
+}
