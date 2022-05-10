@@ -1,8 +1,4 @@
-.container {
-  width: $container-s;
-  margin: 0 auto;
-}
-.logo {
+.logoPC {
   background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg')
     no-repeat center;
   width: 230px;
@@ -10,6 +6,19 @@
   white-space: nowrap;
   text-indent: 101%;
   overflow: hidden;
+}
+.logoMB {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+    background: url('../../../dist/images/logotype-lg-dark.svg') no-repeat
+      center;
+    width: 170px;
+    height: 40px;
+    white-space: nowrap;
+    text-indent: 101%;
+    overflow: hidden;
+  }
 }
 .header {
   .navList {
@@ -30,28 +39,80 @@
     }
   }
 }
+.headerBar {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+  .fa-bars {
+    color: $primary;
+  }
+  .menuList {
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+.shopMB {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
 .banner {
+  max-width: 940px;
+  margin: 0 auto;
   background: url('https://bit.ly/2OhbMHr') no-repeat center;
   background-size: cover;
   height: 496px;
   position: relative;
   margin-bottom: 247px;
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+    width: 100%;
+  }
 }
-h2 {
-  font-size: $l;
-  line-height: $xl;
-  writing-mode: vertical-lr;
-  letter-spacing: 2px;
+.pcItem {
+  margin: 0 auto;
+  width: 780px;
+  display: flex;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.item1,
+.item2,
+.item3 {
+  width: 260px;
+  height: 256px;
+  top: 420px;
+  position: absolute;
+  background-size: cover;
+}
+.item1 {
+  background: url('https://bit.ly/2R5tqwD') no-repeat center;
+  left: 80px;
+}
+.item2 {
+  background: url('https://bit.ly/2Dwoxd7') no-repeat center;
+  left: 340px;
+}
+.item3 {
+  background: url('https://bit.ly/2OUteif') no-repeat center;
+  left: 600px;
 }
 .cover {
   cursor: pointer;
-  width: 260px;
+  width: 100%;
   height: 256px;
   background-color: $primary;
   opacity: 80%;
   backdrop-filter: blur(5px);
   h2 {
     color: $white;
+    font-size: $l;
+    line-height: $xl;
+    writing-mode: vertical-lr;
+    letter-spacing: 2px;
   }
   &:hover {
     background-color: $link-color;
@@ -61,83 +122,170 @@ h2 {
     }
   }
 }
-.item {
-  width: 260px;
-  height: 256px;
-  top: 420px;
-  position: absolute;
-}
-.item1 {
-  background: url('https://bit.ly/2R5tqwD') no-repeat center;
-  background-size: cover;
-  left: 80px;
-}
-.item2 {
-  background: url('https://bit.ly/2Dwoxd7') no-repeat center;
-  background-size: cover;
-  left: 340px;
-}
-.item3 {
-  background: url('https://bit.ly/2OUteif') no-repeat center;
-  background-size: cover;
-  left: 600px;
+
+.mbItem {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+    display: flex;
+    .mbitem1 {
+      background: url('https://bit.ly/2R5tqwD') no-repeat center;
+      width: 33.33%;
+    }
+    .mbitem2 {
+      background: url('https://bit.ly/2Dwoxd7') no-repeat center;
+      width: 33.33%;
+    }
+    .mbitem3 {
+      background: url('https://bit.ly/2OUteif') no-repeat center;
+      width: 33.33%;
+    }
+  }
 }
 .bg-light {
   background-color: $second;
   height: 420px;
 }
-.topic {
+.mainContent {
+  height: 420px;
+  background-color: $second;
+  padding: 0 30px;
+  @media (max-width: 900px) {
+    padding: 0 15px;
+    height: auto;
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+    background-color: $white;
+  }
+}
+.article {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  @media (max-width: 767px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.articlePic {
   position: relative;
-  width: 50%;
+  height: 460px;
+  width: 460px;
   img {
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: -20px;
-    left: 42px;
-    width: 460px;
-    height: 460px;
     object-fit: cover;
   }
-}
-.slogan {
-  position: relative;
-  width: 50%;
-  padding: 70px 0;
-}
-.sloganPic {
-  position: absolute;
-  right: 42px;
-  top: -20px;
-  width: 90px;
-  img {
-    height: 310px;
+  @media (max-width: 900px) {
+    width: 420px;
+    height: 420px;
+    img {
+      top: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 350px;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    order: 2;
+    width: 100%;
+    height: 250px;
   }
 }
-.sloganContent {
-  height: 280px;
+.articleContent {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
-  margin-right: 80px;
+  height: 280px;
+  margin-top: 70px;
   p {
     writing-mode: vertical-rl;
     color: $text-color;
-    line-height: 24px;
-    letter-spacing: 2px;
+    line-height: 25px;
+    &:nth-child(1) {
+      margin-left: 24px;
+    }
   }
-  .content1 {
-    margin-left: 24px;
+  @media (max-width: 767px) {
+    order: 3;
+    flex-direction: column;
+    padding: 30px;
+    background-color: $second;
+    height: auto;
+    margin-top: 0;
+    p {
+      margin-top: 0;
+      writing-mode: horizontal-tb;
+      line-height: 32px;
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+    }
   }
 }
+
+.articleSlogan {
+  position: relative;
+  height: 310px;
+  width: 90px;
+  .PCslogan {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -20px;
+    object-fit: contain;
+  }
+  .MBslogan {
+    display: none;
+  }
+  @media (max-width: 900px) {
+    width: 70px;
+    height: 280px;
+  }
+  @media (max-width: 767px) {
+    order: 1;
+    margin: 30px auto;
+    width: 226px;
+    height: 70px;
+    .PCslogan {
+      display: none;
+    }
+    .MBslogan {
+      display: block;
+      position: relative;
+      top: 0;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+
 .subject {
-  margin-top: 95px;
-  margin-bottom: 80px;
-  img {
-    width: 90px;
-    margin: 0 auto;
+  margin: 95px auto 80px auto;
+  background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/lg-%E6%83%B3%E5%90%83%E7%94%9C%E9%BB%9E%E6%98%AF%E4%B8%8D%E9%9C%80%E8%A6%81%E7%90%86%E7%94%B1%E7%9A%84.svg')
+    no-repeat center;
+  width: 90px;
+  height: 330px;
+  background-size: cover;
+  @media (max-width: 768px) {
+    background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/sm-%E6%A9%AB%E5%BC%8F-%E6%83%B3%E5%90%83%E7%94%9C%E9%BB%9E%E6%98%AF%E4%B8%8D%E9%9C%80%E8%A6%81%E7%90%86%E7%94%B1%E7%9A%84.svg')
+      no-repeat center;
+    margin: 30px auto;
+    width: 226px;
+    height: 60px;
   }
 }
 .productSelect {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 .selectList {
   display: flex;
@@ -145,19 +293,44 @@ h2 {
   li {
     width: 32%;
   }
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    li {
+      width: 100%;
+      height: auto;
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
 }
 .selectPic {
   position: relative;
+  .selectPic-1,
+  .selectPic-2,
+  .selectPic-3 {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
 }
 .highlights {
   background-color: $primary;
   color: #eaf0ed;
+  text-align: center;
+  line-height: 20px;
   width: 36px;
   padding: 10px;
   letter-spacing: 1.5px;
+  position: absolute;
   top: 0;
   left: 20px;
-  position: absolute;
+  @media (max-width: 767px) {
+    width: 40px;
+  }
 }
 .like {
   position: absolute;
@@ -165,6 +338,7 @@ h2 {
   right: 20px;
   width: 30px;
   height: 30px;
+  object-fit: cover;
 }
 .productName {
   text-align: center;
@@ -193,12 +367,22 @@ h2 {
     color: $second;
   }
 }
-
-.memberAccount {
+.subscribe {
   background-color: $primary;
-  padding: 30px;
+  padding: 30px 0px;
+}
+.subscribeInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 .accountLogo {
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+  }
   p {
     font-size: $l;
     line-height: $xl;
@@ -208,9 +392,12 @@ h2 {
 }
 .memberEmail {
   width: 380px;
+  @media (max-width: 540px) {
+    width: 300px;
+  }
 }
 .textInput {
-  width: 316px;
+  width: 80%;
   background: url('../../../dist/images/email_black_24dp.svg') 16px no-repeat;
   background-color: $second;
   padding: 16px 45px;
@@ -218,7 +405,7 @@ h2 {
 }
 .emailBtn {
   background-color: $link-color;
-  width: 64px;
+  width: 20%;
   a {
     padding: 20px 24px;
   }
@@ -231,16 +418,38 @@ h2 {
   padding-top: 40px;
   padding-bottom: 30px;
 }
+.contactWay {
+  display: flex;
+  justify-content: space-between;
+  height: 350px;
+}
 .contactInfo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 .info {
   margin-bottom: 30px;
   p {
     color: $primary;
     line-height: 24px;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.infoMobile {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+    margin-bottom: 40px;
+    p {
+      color: $primary;
+      line-height: 24px;
+    }
   }
 }
 .social {
@@ -252,6 +461,22 @@ h2 {
     height: 32px;
   }
 }
+.rightsMobile {
+  display: none;
+  @media (max-width: 767px) {
+    color: $primary;
+    display: block;
+    margin-top: 24px;
+  }
+}
+.rightsPC {
+  color: $primary;
+  .PC {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
 .footerSlogan {
   display: flex;
   justify-content: space-between;
@@ -260,5 +485,8 @@ h2 {
     width: 60px;
     margin-left: auto;
     margin-bottom: 50px;
+  }
+  @media (max-width: 767px) {
+    display: none;
   }
 }

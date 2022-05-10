@@ -1,3 +1,9 @@
+.container {
+  max-width: $container-s;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 // 距離
 .mb-24 {
   margin-bottom: 24px;
@@ -36,6 +42,19 @@
 }
 
 // 背景顏色
+.bg-dark {
+  background-color: $primary;
+}
 .bg-light {
   background-color: $second;
+}
+
+// RWD
+.d-mb-none {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.fas {
+  color: $primary;
 }
