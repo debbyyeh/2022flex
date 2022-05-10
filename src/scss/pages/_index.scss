@@ -64,46 +64,46 @@
   background: url('https://bit.ly/2OhbMHr') no-repeat center;
   background-size: cover;
   height: 496px;
-  position: relative;
-  margin-bottom: 247px;
   @media (max-width: 768px) {
-    margin-bottom: 0;
+    height: 300px;
     width: 100%;
   }
 }
-.pcItem {
+.item {
   margin: 0 auto;
-  width: 780px;
+  max-width: 780px;
   display: flex;
-  @media (max-width: 768px) {
-    display: none;
+  justify-content: center;
+  margin-top: -70px;
+  margin-bottom: 80px;
+  @media (max-width: 767px) {
+    margin-top: 0;
+    margin-bottom: 0px;
   }
 }
 .item1,
 .item2,
 .item3 {
-  width: 260px;
+  width: 33.33%;
   height: 256px;
-  top: 420px;
-  position: absolute;
   background-size: cover;
+  @media (max-width: 767px) {
+    height: 180px;
+  }
 }
 .item1 {
   background: url('https://bit.ly/2R5tqwD') no-repeat center;
-  left: 80px;
 }
 .item2 {
   background: url('https://bit.ly/2Dwoxd7') no-repeat center;
-  left: 340px;
 }
 .item3 {
   background: url('https://bit.ly/2OUteif') no-repeat center;
-  left: 600px;
 }
 .cover {
   cursor: pointer;
-  width: 100%;
-  height: 256px;
+  max-width: 100%;
+  height: 100%;
   background-color: $primary;
   opacity: 80%;
   backdrop-filter: blur(5px);
@@ -123,25 +123,6 @@
   }
 }
 
-.mbItem {
-  display: none;
-  @media (max-width: 767px) {
-    display: block;
-    display: flex;
-    .mbitem1 {
-      background: url('https://bit.ly/2R5tqwD') no-repeat center;
-      width: 33.33%;
-    }
-    .mbitem2 {
-      background: url('https://bit.ly/2Dwoxd7') no-repeat center;
-      width: 33.33%;
-    }
-    .mbitem3 {
-      background: url('https://bit.ly/2OUteif') no-repeat center;
-      width: 33.33%;
-    }
-  }
-}
 .bg-light {
   background-color: $second;
   height: 420px;
