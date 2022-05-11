@@ -58,7 +58,7 @@
     display: block;
   }
 }
-.banner {
+.banner-product {
   max-width: 940px;
   background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png')
     no-repeat center;
@@ -238,7 +238,9 @@
 }
 .textInput {
   width: 80%;
-  background: url('../../../dist/images/email_black_24dp.svg') 16px no-repeat;
+  background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/email_black_24dp.svg')
+    16px no-repeat;
+  color: $primary;
   background-color: $second;
   padding: 16px 45px;
   font-size: 24px;
