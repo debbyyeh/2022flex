@@ -1,155 +1,316 @@
-<div class="product d-flex jcsb">
-  <div class="productList">
-    <h2 class="itemTitle">甜點類別</h2>
-    <ul>
-      <li><a href="#" class="allLists">所有甜點（48）</a></li>
-      <li><a href="#">本日精選（10）</a></li>
-      <li><a href="#">人氣推薦（26）</a></li>
-      <li>
-        <a href="#">新品上市（12）</a>
-      </li>
-    </ul>
-  </div>
-  <div class="productContent">
-    <ul class="contentList">
-      <li class="pb-20">
-        <div class="productPic">
-          <p class="highlights">本日精選</p>
-          <a href="#">
-            <img
-              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-              alt="like"
-              class="like"
-            />
-          </a>
-          <img
-            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-1.png"
-            alt="product1"
-          />
-        </div>
-        <div class="productName">
-          <div class="d-flex alc">
-            <h3 class="itemName">焦糖馬卡龍</h3>
-            <p class="price">NT 450</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;900&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>甜點網-產品頁面</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="d-flex jcsb alc pt-30 pb-30">
+          <div class="headerBar">
+            <a href="" class="menu_btn">
+              <i class="fas fa-bars fa-2x"></i>
+            </a>
+            <ul class="menuList">
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="product.html">甜點</a></li>
+              <li><a href="login.html">登入</a></li>
+            </ul>
           </div>
-          <a href="#" class="addCart">加入購物車</a>
-        </div>
-      </li>
-      <li class="pb-20">
-        <div class="productPic">
-          <p class="highlights">本日精選</p>
-          <a href="#">
-            <img
-              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-              alt="like"
-              class="like"
-            />
+          <a href="index.html" class="logo">
+            <h1 class="logoPC d-mb-none"></h1>
+            <h1 class="logoMB"></h1>
           </a>
-          <img
-            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-1.png"
-            alt="product1"
-          />
-        </div>
-        <div class="productName">
-          <div class="d-flex alc">
-            <h3 class="itemName">焦糖馬卡龍</h3>
-            <p class="price">NT 450</p>
-          </div>
-          <a href="#" class="addCart">加入購物車</a>
-        </div>
-      </li>
-      <li class="pb-20">
-        <div class="productPic">
-          <p class="highlights">本日精選</p>
-          <a href="#">
-            <img
-              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-              alt="like"
-              class="like"
-            />
+          <ul class="navList d-flex alc d-mb-none">
+            <li class="d-mb-none"><a href="index.html">首頁</a></li>
+            <li class="d-mb-none"><a href="product.html">甜點</a></li>
+            <li class="d-mb-none"><a href="login.html">登入</a></li>
+            <li>
+              <a href="">
+                <i class="fas fa-2x fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+          <a href="" class="shopMB">
+            <i class="fas fa-2x fa-solid fa-cart-shopping"></i>
           </a>
-          <img
-            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-1.png"
-            alt="product1"
-          />
         </div>
-        <div class="productName">
-          <div class="d-flex alc">
-            <h3 class="itemName">焦糖馬卡龍</h3>
-            <p class="price">NT 450</p>
+      </div>
+    </div>
+    <div class="banner"></div>
+    <div class="product">
+      <div class="productList">
+        <h2 class="itemTitle">甜點類別</h2>
+        <ul>
+          <li><a href="#" class="allLists">所有甜點（48）</a></li>
+          <li><a href="#">本日精選（10）</a></li>
+          <li><a href="#">人氣推薦（26）</a></li>
+          <li>
+            <a href="#">新品上市（12）</a>
+          </li>
+        </ul>
+      </div>
+      <div class="productContent">
+        <ul class="contentList">
+          <li>
+            <div class="productPic">
+              <p class="highlights">本日精選</p>
+              <a href="#">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
+                  alt="like"
+                  class="like"
+                />
+              </a>
+              <div class="product-1">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-1.png"
+                  alt="product-1"
+                />
+              </div>
+            </div>
+            <div class="productName">
+              <div class="d-flex alc">
+                <h3 class="itemName">焦糖馬卡龍</h3>
+                <p class="price">NT 450</p>
+              </div>
+              <a href="#" class="addCart">加入購物車</a>
+            </div>
+          </li>
+          <li>
+            <div class="productPic">
+              <p class="highlights">本日精選</p>
+              <a href="#">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
+                  alt="like"
+                  class="like"
+                />
+              </a>
+              <div class="product-2">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-2.png"
+                  alt="product-2"
+                />
+              </div>
+            </div>
+            <div class="productName">
+              <div class="d-flex alc">
+                <h3 class="itemName">焦糖馬卡龍</h3>
+                <p class="price">NT 450</p>
+              </div>
+              <a href="#" class="addCart">加入購物車</a>
+            </div>
+          </li>
+          <li>
+            <div class="productPic">
+              <p class="highlights">本日精選</p>
+              <a href="#">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
+                  alt="like"
+                  class="like"
+                />
+              </a>
+              <div class="product-3">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-3.png"
+                  alt="product-3"
+                />
+              </div>
+            </div>
+            <div class="productName">
+              <div class="d-flex alc">
+                <h3 class="itemName">焦糖馬卡龍</h3>
+                <p class="price">NT 450</p>
+              </div>
+              <a href="#" class="addCart">加入購物車</a>
+            </div>
+          </li>
+          <li>
+            <div class="productPic">
+              <p class="highlights">本日精選</p>
+              <a href="#">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
+                  alt="like"
+                  class="like"
+                />
+              </a>
+              <div class="product-4">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-4.png"
+                  alt="product-4"
+                />
+              </div>
+            </div>
+            <div class="productName">
+              <div class="d-flex alc">
+                <h3 class="itemName">焦糖馬卡龍</h3>
+                <p class="price">NT 450</p>
+              </div>
+              <a href="#" class="addCart">加入購物車</a>
+            </div>
+          </li>
+          <li>
+            <div class="productPic">
+              <p class="highlights">本日精選</p>
+              <a href="#">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
+                  alt="like"
+                  class="like"
+                />
+              </a>
+              <div class="product-5">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-5.png"
+                  alt="product-5"
+                />
+              </div>
+            </div>
+            <div class="productName">
+              <div class="d-flex alc">
+                <h3 class="itemName">焦糖馬卡龍</h3>
+                <p class="price">NT 450</p>
+              </div>
+              <a href="#" class="addCart">加入購物車</a>
+            </div>
+          </li>
+          <li>
+            <div class="productPic">
+              <p class="highlights">本日精選</p>
+              <a href="#">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
+                  alt="like"
+                  class="like"
+                />
+              </a>
+              <div class="product-6">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-6.png"
+                  alt="product-6"
+                />
+              </div>
+            </div>
+            <div class="productName">
+              <div class="d-flex alc">
+                <h3 class="itemName">焦糖馬卡龍</h3>
+                <p class="price">NT 450</p>
+              </div>
+              <a href="#" class="addCart">加入購物車</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="pagniation">
+        <ul class="pageButton">
+          <li>
+            <a href=""><i class="fa-solid fa-caret-left"></i></a>
+          </li>
+          <li><a href="">1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li>
+            <a href=""><i class="fa-solid fa-caret-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container-x">
+        <div class="subscribe bg-dark h-100">
+          <div class="container">
+            <div class="subscribeInfo">
+              <div class="accountLogo d-flex jcsb alc">
+                <a href="member.html" class="d-flex">
+                  <img
+                    src="./dist/images/logo-light.svg"
+                    alt="logo-light"
+                    width="40px"
+                    height="40px"
+                  />
+                </a>
+                <p>訂閱你我的甜蜜郵件</p>
+              </div>
+              <div class="memberEmail d-flex">
+                <input type="text" class="textInput" />
+                <div class="emailBtn d-flex jcc alc">
+                  <a href="">
+                    <img
+                      src="./dist/images/arrow_forward_black_24dp.svg"
+                      alt="send"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="#" class="addCart">加入購物車</a>
         </div>
-      </li>
-      <li class="pb-20">
-        <div class="productPic">
-          <p class="highlights">本日精選</p>
-          <a href="#">
-            <img
-              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-              alt="like"
-              class="like"
-            />
-          </a>
-          <img
-            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-1.png"
-            alt="product1"
-          />
-        </div>
-        <div class="productName">
-          <div class="d-flex alc">
-            <h3 class="itemName">焦糖馬卡龍</h3>
-            <p class="price">NT 450</p>
+        <div class="contact bg-light">
+          <div class="container">
+            <div class="contactWay">
+              <div class="contactInfo">
+                <a href="index.html">
+                  <img
+                    src="./dist/images/logotype-lg-dark.svg"
+                    alt="logo-dark"
+                    height="30px"
+                  />
+                </a>
+                <div class="infoMobile">
+                  <p>07-1234-5678</p>
+                  <p>sweetaste@email.com 800</p>
+                  <p>高雄市新興區幸福路 520 號</p>
+                </div>
+                <div>
+                  <div class="info">
+                    <p>07-1234-5678</p>
+                    <p>sweetaste@email.com 800</p>
+                    <p>高雄市新興區幸福路 520 號</p>
+                  </div>
+                  <div class="social d-flex">
+                    <a href="">
+                      <img src="./dist/images/ic-line@.svg" alt="line" />
+                    </a>
+                    <a href="">
+                      <img src="./dist/images/ic-facebook.svg" alt="facebook" />
+                    </a>
+                  </div>
+                  <p class="rightsMobile">
+                    © 2018 Sweetaste* All Rights Reserved
+                  </p>
+                </div>
+              </div>
+              <div class="footerSlogan">
+                <div>
+                  <img
+                    src="./dist/images/sm-今天是個吃甜點的好日子.svg"
+                    alt="slogan"
+                    height="220px"
+                  />
+                </div>
+                <p class="rightsPC">© 2018 Sweetaste* All Rights Reserved</p>
+              </div>
+            </div>
           </div>
-          <a href="#" class="addCart">加入購物車</a>
         </div>
-      </li>
-      <li class="pb-20">
-        <div class="productPic">
-          <p class="highlights">本日精選</p>
-          <a href="#">
-            <img
-              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-              alt="like"
-              class="like"
-            />
-          </a>
-          <img
-            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-1.png"
-            alt="product1"
-          />
-        </div>
-        <div class="productName">
-          <div class="d-flex alc">
-            <h3 class="itemName">焦糖馬卡龍</h3>
-            <p class="price">NT 450</p>
-          </div>
-          <a href="#" class="addCart">加入購物車</a>
-        </div>
-      </li>
-      <li class="pb-20">
-        <div class="productPic">
-          <p class="highlights">本日精選</p>
-          <a href="#">
-            <img
-              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-              alt="like"
-              class="like"
-            />
-          </a>
-          <img
-            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-1.png"
-            alt="product1"
-          />
-        </div>
-        <div class="productName">
-          <div class="d-flex alc">
-            <h3 class="itemName">焦糖馬卡龍</h3>
-            <p class="price">NT 450</p>
-          </div>
-          <a href="#" class="addCart">加入購物車</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+      </div>
+    </div>
+  </body>
+</html>

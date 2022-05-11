@@ -1,45 +1,141 @@
+.logoPC {
+  background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg')
+    no-repeat center;
+  width: 230px;
+  height: 40px;
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+}
+.logoMB {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+    background: url('../../../dist/images/logotype-lg-dark.svg') no-repeat
+      center;
+    width: 170px;
+    height: 40px;
+    white-space: nowrap;
+    text-indent: 101%;
+    overflow: hidden;
+  }
+}
+.header {
+  .navList {
+    li {
+      margin-left: 60px;
+    }
+    :nth-child(4) {
+      margin-left: 80px;
+    }
+    a {
+      font-weight: bold;
+      color: $primary;
+      border-bottom: 2px solid transparent;
+      padding: 10px;
+      &:hover {
+        border-bottom: 2px solid $second;
+      }
+    }
+  }
+}
+.headerBar {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+  .fa-bars {
+    color: $primary;
+  }
+  .menuList {
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+.shopMB {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
 .banner {
+  max-width: 940px;
   background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png')
     no-repeat center;
   background-size: cover;
   height: 496px;
   margin-bottom: 60px;
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 0;
+  }
 }
-
+.product {
+  max-width: 1000px;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
 .productList {
   width: 30%;
   text-align: center;
   font-size: 24px;
   line-height: 40px;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
   h2 {
-    background-color: #3f5d45;
+    background-color: $primary;
     padding: 16px 0;
-    color: #eaf0ed;
+    color: $second;
   }
   a {
-    border-bottom: 1px solid #eaf0ed;
-    border-right: 1px solid #eaf0ed;
-    border-left: 1px solid #eaf0ed;
-    color: #3f5d45;
+    border-bottom: 1px solid $second;
+    border-right: 1px solid $second;
+    border-left: 1px solid $second;
+    color: $primary;
     padding: 16px 0;
     &:hover {
-      background-color: #3f5d45;
-      color: #eaf0ed;
+      background-color: $primary;
+      color: $second;
     }
   }
 }
 .allLists {
-  background-color: #eaf0ed;
+  background-color: $second;
 }
 .productContent {
   width: 65%;
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+.contentList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li {
+    width: 48%;
+    margin-bottom: 20px;
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
 }
 .productPic {
   position: relative;
 }
 .highlights {
-  background-color: #3f5d45;
-  color: #eaf0ed;
+  background-color: $primary;
+  color: $second;
   width: 36px;
   padding: 10px;
   letter-spacing: 1.5px;
@@ -52,31 +148,185 @@
   top: 20px;
   right: 20px;
 }
-.contentList {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.product-1,
+.product-2,
+.product-3,
+.product-4,
+.product-5,
+.product-6 {
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 .productName {
   text-align: center;
 }
 .itemName {
   width: 60%;
-  border-right: 1px solid #eaf0ed;
-  border-left: 1px solid #eaf0ed;
+  border-right: 1px solid $second;
+  border-left: 1px solid $second;
   padding: 14px;
 }
 .price {
   width: 40%;
   padding: 14px;
-  border-right: 1px solid #eaf0ed;
+  border-right: 1px solid $second;
 }
 .addCart {
-  background-color: #eaf0ed;
-  color: #3f5d45;
+  background-color: $second;
+  color: $primary;
   padding: 16px;
   &:hover {
-    background-color: #3f5d45;
-    color: #eaf0ed;
+    background-color: $primary;
+    color: $second;
+  }
+}
+//pagniation
+.pagniation {
+  width: 30%;
+  margin-left: auto;
+  @media (max-width: 767px) {
+    width: 100%;
+    margin: 30px auto;
+  }
+}
+.pageButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  li {
+    width: 20%;
+  }
+  a {
+    text-align: center;
+    padding: 18px;
+    border: 1px solid $second;
+    color: $primary;
+  }
+}
+// footer
+.subscribe {
+  background-color: $primary;
+  padding: 30px 0px;
+}
+.subscribeInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.accountLogo {
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+  }
+  p {
+    font-size: $l;
+    line-height: $xl;
+    color: $second;
+    margin-left: $m;
+  }
+}
+.memberEmail {
+  width: 380px;
+  @media (max-width: 540px) {
+    width: 300px;
+  }
+}
+.textInput {
+  width: 80%;
+  background: url('../../../dist/images/email_black_24dp.svg') 16px no-repeat;
+  background-color: $second;
+  padding: 16px 45px;
+  font-size: 24px;
+}
+.emailBtn {
+  background-color: $link-color;
+  width: 20%;
+  a {
+    padding: 20px 24px;
+  }
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+.contact {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.contactWay {
+  display: flex;
+  justify-content: space-between;
+  height: 350px;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 767px) {
+    justify-content: space-between;
+  }
+}
+.info {
+  margin-bottom: 30px;
+  p {
+    color: $primary;
+    line-height: 24px;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.infoMobile {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+    margin-bottom: 40px;
+    p {
+      color: $primary;
+      line-height: 24px;
+    }
+  }
+}
+.social {
+  :nth-child(1) {
+    margin-right: 8px;
+  }
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+.rightsMobile {
+  display: none;
+  @media (max-width: 767px) {
+    color: $primary;
+    display: block;
+    margin-top: 24px;
+  }
+}
+.rightsPC {
+  color: $primary;
+  .PC {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+.footerSlogan {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  img {
+    width: 60px;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  @media (max-width: 767px) {
+    display: none;
   }
 }
