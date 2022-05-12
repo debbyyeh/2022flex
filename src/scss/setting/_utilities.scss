@@ -3,6 +3,14 @@
   padding: 0 30px;
   margin: 0 auto;
 }
+.container-x {
+  max-width: $container-s;
+  padding: 0 30px;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
 
 // 距離
 .mb-24 {

@@ -1,4 +1,4 @@
-.logoPC {
+.logo {
   background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg')
     no-repeat center;
   width: 230px;
@@ -6,21 +6,17 @@
   white-space: nowrap;
   text-indent: 101%;
   overflow: hidden;
-}
-.logoMB {
-  display: none;
   @media (max-width: 767px) {
-    display: block;
-    background: url('../../../dist/images/logotype-lg-dark.svg') no-repeat
-      center;
+    background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/logotype-lg-dark.svg')
+      no-repeat center;
     width: 170px;
-    height: 40px;
-    white-space: nowrap;
-    text-indent: 101%;
-    overflow: hidden;
   }
 }
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
   .navList {
     li {
       margin-left: 60px;
@@ -36,6 +32,9 @@
       &:hover {
         border-bottom: 2px solid $second;
       }
+    }
+    @media (max-width: 767px) {
+      display: none;
     }
   }
 }
@@ -58,6 +57,7 @@
     display: block;
   }
 }
+// banner
 .banner-index {
   max-width: 940px;
   margin: 0 auto;

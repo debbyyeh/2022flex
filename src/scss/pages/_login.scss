@@ -58,153 +58,153 @@
     display: block;
   }
 }
-.banner-product {
-  max-width: 940px;
-  margin: 0 auto;
-  background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png')
-    no-repeat center;
-  background-size: cover;
-  height: 496px;
-  margin-bottom: 60px;
-  @media (max-width: 767px) {
-    width: 100%;
-    height: 280px;
-    margin-bottom: 0;
-  }
-}
-.product {
-  max-width: 1000px;
-  padding: 0 30px;
-  margin: 0 auto;
+
+// login
+.login {
+  margin: 60px auto;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  padding: 0 30px;
   @media (max-width: 767px) {
+    flex-wrap: wrap;
+    margin: 0 auto;
     padding: 0;
   }
 }
-.productList {
-  width: 30%;
-  text-align: center;
-  font-size: 24px;
-  line-height: 40px;
+.accountInput,
+.inputSocial {
+  width: 50%;
   @media (max-width: 767px) {
     width: 100%;
   }
-  h2 {
-    background-color: $primary;
-    padding: 16px 0;
-    color: $second;
-  }
-  a {
-    border-bottom: 1px solid $second;
-    border-right: 1px solid $second;
-    border-left: 1px solid $second;
-    color: $primary;
-    padding: 16px 0;
-    &:hover {
-      background-color: $primary;
-      color: $second;
-    }
-  }
-}
-.allLists {
-  background-color: $second;
-}
-.productContent {
-  width: 65%;
-  @media (max-width: 767px) {
-    width: 100%;
-    padding: 0 30px;
-  }
-}
-.contentList {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  li {
-    width: 48%;
-    margin-bottom: 20px;
+  > h2 {
+    display: none;
     @media (max-width: 767px) {
-      width: 100%;
-      margin-bottom: 30px;
+      display: block;
+      background-color: $primary;
+      font-size: $xxxl;
+      line-height: $xxxl;
+      color: $second;
+      text-align: center;
+      padding: 30px 0;
+    }
+  }
+  .MBsocial {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+      background-color: $second;
+      padding: 30px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        background-color: $white;
+        width: 100%;
+        &:nth-child(2) {
+          a {
+            border-right: 1px solid $second;
+            border-left: 1px solid $second;
+          }
+        }
+      }
+      a {
+        padding: 20px 13px;
+      }
+      img {
+        width: 80px;
+        height: 40px;
+        margin: 0 auto;
+        object-fit: contain;
+      }
     }
   }
 }
-.productPic {
-  position: relative;
-}
-.highlights {
+.inputLogin {
   background-color: $primary;
-  color: $second;
-  width: 36px;
-  padding: 10px;
-  letter-spacing: 1.5px;
-  top: 0;
-  left: 20px;
-  position: absolute;
-}
-.like {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-.product-1,
-.product-2,
-.product-3,
-.product-4,
-.product-5,
-.product-6 {
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-.productName {
-  text-align: center;
-}
-.itemName {
-  width: 60%;
-  border-right: 1px solid $second;
-  border-left: 1px solid $second;
-  padding: 14px;
-}
-.price {
-  width: 40%;
-  padding: 14px;
-  border-right: 1px solid $second;
-}
-.addCart {
-  background-color: $second;
-  color: $primary;
-  padding: 16px;
-  &:hover {
-    background-color: $primary;
+  padding: 0 30px 25px 30px;
+  h2 {
+    font-size: $xxxl;
+    line-height: $xxxl;
     color: $second;
+    text-align: center;
+    padding: 40px 0;
   }
-}
-//pagniation
-.pagniation {
-  width: 30%;
-  margin-left: auto;
   @media (max-width: 767px) {
-    width: 100%;
-    margin: 30px auto;
+    padding: 30px;
   }
 }
-.pageButton {
+
+.formGroup {
+  margin-bottom: 16px;
+  input {
+    background-color: $second;
+    width: 100%;
+    line-height: 20px;
+    font-size: 16px;
+  }
+}
+.loginAccount {
+  background: url('../../../dist/images/user-solid.svg') 4%/16px no-repeat;
+  padding: 16px 45px;
+  color: $primary;
+}
+.loginPassword {
+  background: url(../../../dist/images/vpn_key_FILL0_wght400_GRAD0_opsz48.svg)
+    4%/16px no-repeat;
+  padding: 16px 45px;
+  color: $primary;
+}
+.checkGroup {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  align-items: center;
+  input {
+    color: $second;
+    line-height: 36px;
+  }
+}
+.enterBtn {
+  background-color: $link-color;
+  width: 100%;
+  a {
+    color: $primary;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+}
+.inputSocial {
+  padding: 40px 30px;
+  background-color: $second;
+  h3 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    color: $text-color;
+    margin-bottom: 36px;
+  }
   li {
-    width: 20%;
+    background-color: $white;
+    // height: 56px;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 16px;
+    }
   }
   a {
-    text-align: center;
     padding: 18px;
-    border: 1px solid $second;
-    color: $primary;
+    img {
+      margin: 0 auto;
+      width: 110px;
+      height: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 // footer
