@@ -1513,13 +1513,13 @@ body input:focus {
 }
 
 .loginAccount {
-  background: url("../../../dist/images/user-solid.svg") 4%/16px no-repeat;
+  background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/user-solid.svg") 4%/16px no-repeat;
   padding: 16px 45px;
   color: #3f5d45;
 }
 
 .loginPassword {
-  background: url(../../../dist/images/vpn_key_FILL0_wght400_GRAD0_opsz48.svg) 4%/16px no-repeat;
+  background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/vpn_key_FILL0_wght400_GRAD0_opsz48.svg") 4%/16px no-repeat;
   padding: 16px 45px;
   color: #3f5d45;
 }
