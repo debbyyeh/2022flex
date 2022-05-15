@@ -1,0 +1,57 @@
+// footer
+.subscribeInfo {
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.accountLogo {
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+  }
+}
+.memberEmail {
+  max-width: 380px;
+  @media (max-width: 540px) {
+    width: 300px;
+  }
+}
+.textInput {
+  width: 80%;
+  background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/email_black_24dp.svg')
+    16px no-repeat;
+  background-color: $second;
+  padding: 16px 45px;
+}
+.emailBtn {
+  width: 20%;
+  a {
+    padding: 20px 24px;
+  }
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+.contact {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.contactWay {
+  height: 350px;
+}
+.social {
+  :nth-child(1) {
+    margin-right: 8px;
+  }
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+.footerSlogan {
+  img {
+    width: 60px;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,27 @@
+// header
+.logo {
+  background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg')
+    no-repeat center;
+  width: 230px;
+  height: 40px;
+  @media (max-width: 767px) {
+    background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/logotype-lg-dark.svg')
+      no-repeat center;
+    width: 170px;
+  }
+}
+.navList {
+  :nth-child(4) {
+    margin-left: 80px;
+  }
+  a {
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid $second;
+    }
+  }
+}
+.menuList {
+  max-height: 0;
+  overflow: hidden;
+}

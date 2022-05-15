@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;900&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>甜點網-購物車頁面</title>
+  </head>
+  <body>
+    <div class="container mx-auto px-30">
+      <div class="header py-30 d-flex jcsb alc">
+        <div class="headerBar d-none d-mb-block">
+          <a href="" class="menu_btn">
+            <i class="fas fa-bars fa-2x text-primary"></i>
+          </a>
+          <ul class="menuList">
+            <li>
+              <a
+                href="index.html"
+                target="_blank"
+                class="fw-b text-primary px-30"
+              >
+                首頁
+              </a>
+            </li>
+            <li>
+              <a
+                href="product.html"
+                target="_blank"
+                class="fw-b text-primary px-30"
+              >
+                甜點
+              </a>
+            </li>
+            <li>
+              <a
+                href="login.html"
+                target="_blank"
+                class="fw-b text-primary px-30"
+              >
+                登入
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="index.html">
+          <h1 class="logo"></h1>
+        </a>
+        <ul class="navList d-flex alc d-mb-none">
+          <li class="d-mb-none">
+            <a href="index.html" class="fw-b text-primary px-30">首頁</a>
+          </li>
+          <li class="d-mb-none">
+            <a href="product.html" class="fw-b text-primary px-30">甜點</a>
+          </li>
+          <li class="d-mb-none">
+            <a href="login.html" class="fw-b text-primary px-30">登入</a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-2x fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+        <a href="" class="shopMB d-none d-mb-block">
+          <i class="fas fa-2x fa-solid fa-cart-shopping"></i>
+        </a>
+      </div>
+    </div>
+    <h2
+      class="text-l text-center text-primary fw-b bg-light py-20 mb-30 d-none d-mb-block"
+    >
+      您的購物車
+    </h2>
+    <div class="cartInfo container px-30 mx-auto d-flex jcsb">
+      <div class="col-md-6 w-100 mr-20">
+        <h2
+          class="text-l text-center text-primary fw-b bg-light py-20 mb-30 d-mb-none"
+        >
+          您的購物車
+        </h2>
+        <div class="cartPart d-flex jcsb alc pb-20 border-b">
+          <div class="cartPic w-20 mr-16">
+            <img src="https://bit.ly/2zBDAxX" alt="cartProduct" />
+          </div>
+          <div class="buyProduct jcsb w-50">
+            <div>
+              <p class="text-m text-primary lh-20 mb-4">焦糖馬卡龍</p>
+              <p class="text-primary lh-20 totalPrice">NT$ 450</p>
+            </div>
+            <div class="d-flex">
+              <a href="" class="text-center border-light">
+                <i class="fas fa-minus"></i>
+              </a>
+              <a
+                href=""
+                class="cartNumber text-center text-primary border-light"
+              >
+                2
+              </a>
+              <a href="" class="text-center border-light">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+          <div class="cartAmount d-flex jcsb alc w-20 d-mb-none">
+            <p class="text-m lh-20 text-primary fw-b">NT$ 900</p>
+            <a href=""><i class="fas fa-trash"></i></a>
+          </div>
+        </div>
+        <div
+          class="cartAmountMB d-none d-mb-block jcsb pb-8 pt-8 border-b mb-30"
+        >
+          <a href=""><i class="fas fa-trash"></i></a>
+          <p class="text-m lh-20 text-primary fw-b ml-auto">
+            NT$ 900
+          </p>
+        </div>
+        <div class="cartPart d-flex jcsb alc pb-20 border-b">
+          <div class="cartPic w-20 mr-16">
+            <img src="https://bit.ly/2zBDAxX" alt="cartProduct" />
+          </div>
+          <div class="buyProduct jcsb w-50">
+            <div>
+              <p class="text-m text-primary lh-20 mb-4">焦糖馬卡龍</p>
+              <p class="text-primary lh-20 totalPrice">NT$ 450</p>
+            </div>
+            <div class="d-flex">
+              <a href="" class="text-center border-light">
+                <i class="fas fa-minus"></i>
+              </a>
+              <a
+                href=""
+                class="cartNumber text-center text-primary border-light"
+              >
+                2
+              </a>
+              <a href="" class="text-center border-light">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+          <div class="cartAmount d-flex jcsb alc w-20 d-mb-none">
+            <p class="text-m lh-20 text-primary fw-b">NT$ 900</p>
+            <a href=""><i class="fas fa-trash"></i></a>
+          </div>
+        </div>
+        <div
+          class="cartAmountMB d-none d-mb-block jcsb pb-8 pt-8 border-b mb-30"
+        >
+          <a href=""><i class="fas fa-trash"></i></a>
+          <p class="text-m lh-20 text-primary fw-b ml-auto">
+            NT$ 900
+          </p>
+        </div>
+        <div class="cartPart d-flex jcsb alc pb-20 border-b">
+          <div class="cartPic w-20 mr-16">
+            <img src="https://bit.ly/2zBDAxX" alt="cartProduct" />
+          </div>
+          <div class="buyProduct jcsb w-50">
+            <div>
+              <p class="text-m text-primary lh-20 mb-4">焦糖馬卡龍</p>
+              <p class="text-primary lh-20 totalPrice">NT$ 450</p>
+            </div>
+            <div class="d-flex">
+              <a href="" class="text-center border-light">
+                <i class="fas fa-minus"></i>
+              </a>
+              <a
+                href=""
+                class="cartNumber text-center text-primary border-light"
+              >
+                2
+              </a>
+              <a href="" class="text-center border-light">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+          <div class="cartAmount d-flex jcsb alc w-20 d-mb-none">
+            <p class="text-m lh-20 text-primary fw-b">NT$ 900</p>
+            <a href=""><i class="fas fa-trash"></i></a>
+          </div>
+        </div>
+        <div class="cartAmountMB d-none d-mb-block jcsb pb-8 pt-8 border-b">
+          <a href=""><i class="fas fa-trash"></i></a>
+          <p class="text-m lh-20 text-primary fw-b ml-auto">
+            NT$ 900
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 w-100 d-mb-none">
+        <div class="container">
+          <div class="amountInfo bg-dark text-second py-20">
+            <h3 class="text-l text-center pt-16 pb-16 mb-16 border-b">
+              訂單摘要
+            </h3>
+            <div class="d-flex jcsb alc mb-8">
+              <p>小計</p>
+              <p>NT$ 2,700</p>
+            </div>
+            <div class="d-flex jcsb alc mb-16">
+              <p>運費</p>
+              <p>NT$ 300</p>
+            </div>
+            <div class="d-flex jcsb alc mb-16">
+              <p class="text-m fw-b">總計</p>
+              <p class="text-m fw-b">NT$ 3,000</p>
+            </div>
+          </div>
+          <div class="bg-link">
+            <a href="" class="text-primary py-20 text-l text-center fw-b">
+              結帳
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-30 mx-auto text-primary">
+      <h3 class="text-l fw-b text-center bg-light py-20 mb-16">
+        訂單摘要
+      </h3>
+      <div class="d-flex jcsb alc mb-8">
+        <p>小計</p>
+        <p>NT$ 2,700</p>
+      </div>
+      <div class="d-flex jcsb alc mb-16">
+        <p>運費</p>
+        <p>NT$ 300</p>
+      </div>
+      <div class="d-flex jcsb alc mb-16">
+        <p class="text-m fw-b">總計</p>
+        <p class="text-m fw-b">NT$ 3,000</p>
+      </div>
+    </div>
+    <div>
+      <a href="" class="text-center text-l text-primary fw-b py-20 bg-link">
+        結帳
+      </a>
+    </div>
+    <div class="footer">
+      <div class="bg-dark">
+        <div class="subscribe container mx-auto px-30 py-30 h-100">
+          <div class="subscribeInfo d-flex jcsb alc px-30 p0">
+            <div class="accountLogo d-flex jcsb alc">
+              <a href="member.html" class="d-flex">
+                <img
+                  src="./dist/images/logo-light.svg"
+                  alt="logo-light"
+                  width="40px"
+                  height="40px"
+                />
+              </a>
+              <p class="text-l lh-30 text-second ml-20">
+                訂閱你我的甜蜜郵件
+              </p>
+            </div>
+            <div class="memberEmail d-flex">
+              <input type="text" class="textInput text-l bg-light" />
+              <div class="emailBtn d-flex jcc alc bg-link">
+                <a href="">
+                  <i class="fas fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact bg-light">
+        <div class="container px-30 mx-auto">
+          <div class="contactWay px-30 d-flex jcsb">
+            <div class="contactInfo d-flex jcsb fd-c">
+              <a href="index.html">
+                <img
+                  src="./dist/images/logotype-lg-dark.svg"
+                  alt="logo-dark"
+                  height="30px"
+                />
+              </a>
+              <div class="infoMobile d-none d-mb-block mb-40">
+                <p class="text-primary lh-24">07-1234-5678</p>
+                <p class="text-primary lh-24">sweetaste@email.com 800</p>
+                <p class="text-primary lh-24">高雄市新興區幸福路 520 號</p>
+              </div>
+              <div>
+                <div class="info mb-30 d-mb-none">
+                  <p class="text-primary lh-24">07-1234-5678</p>
+                  <p class="text-primary lh-24">sweetaste@email.com 800</p>
+                  <p class="text-primary lh-24">高雄市新興區幸福路 520 號</p>
+                </div>
+                <div class="social d-flex">
+                  <a href="">
+                    <img src="./dist/images/ic-line@.svg" alt="line" />
+                  </a>
+                  <a href="">
+                    <img src="./dist/images/ic-facebook.svg" alt="facebook" />
+                  </a>
+                </div>
+                <p class="rightsMobile text-primary d-none d-mb-block mt-24">
+                  © 2018 Sweetaste* All Rights Reserved
+                </p>
+              </div>
+            </div>
+            <div class="footerSlogan d-flex jcsb fd-c d-mb-none">
+              <div>
+                <img
+                  src="./dist/images/sm-今天是個吃甜點的好日子.svg"
+                  alt="slogan"
+                  height="220px"
+                />
+              </div>
+              <p class="rightsPC text-primary d-mb-none">
+                © 2018 Sweetaste* All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

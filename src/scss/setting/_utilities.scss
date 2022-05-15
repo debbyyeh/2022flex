@@ -1,23 +1,97 @@
 .container {
   max-width: $container-s;
-  padding: 0 30px;
-  margin: 0 auto;
 }
-.container-x {
-  max-width: $container-s;
-  padding: 0 30px;
-  margin: 0 auto;
-  @media (max-width: 767px) {
-    padding: 0;
+
+//格線
+.col-md-6 {
+  @media (min-width: 768px) {
+    max-width: 620px;
+  }
+}
+.col-md-3 {
+  @media (min-width: 768px) {
+    max-width: 300px;
   }
 }
 
 // 距離
+.mx-auto {
+  margin: 0 auto;
+}
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mr-16 {
+  margin-right: 16px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.mr-5 {
+  margin-right: 5%;
+}
+.mr-20 {
+  margin-right: 20px;
+  @media (max-width: 767px) {
+    margin-right: 0;
+  }
+}
+.mt-24 {
+  margin-top: 24px;
+}
 .mb-24 {
   margin-bottom: 24px;
 }
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
 .mb-105 {
   margin-bottom: 105px;
+}
+.pt-8 {
+  padding-top: 8px;
+}
+.pb-8 {
+  padding-bottom: 8px;
+}
+.pt-16 {
+  padding-top: 16px;
+}
+.pb-16 {
+  padding-bottom: 16px;
+}
+.px-30 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.p0 {
+  @media (max-width: 900px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .pt-30 {
   padding-top: 30px;
@@ -28,16 +102,37 @@
 .pb-20 {
   padding-bottom: 20px;
 }
+.w-20 {
+  width: 20%;
+}
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-50 {
+  width: 50%;
+}
 .w-100 {
   width: 100%;
 }
-.h-100 {
-  height: 100%;
-}
-
 // 排版
 .d-flex {
   display: flex;
+}
+.flex-wrap {
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+.fd-c {
+  flex-direction: column;
+}
+.fd-mb-c {
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 .jcc {
   justify-content: center;
@@ -48,6 +143,9 @@
 .alc {
   align-items: center;
 }
+.text-center {
+  text-align: center;
+}
 
 // 背景顏色
 .bg-dark {
@@ -56,13 +154,100 @@
 .bg-light {
   background-color: $second;
 }
+.bg-link {
+  background-color: $link-color;
+}
 
+//字體
+.text-m {
+  font-size: 20px;
+}
+.text-l {
+  font-size: 24px;
+}
+.text-primary {
+  color: $primary;
+}
+.text-second {
+  color: $second;
+}
+.text-white {
+  color: $white;
+}
+.text-light {
+  color: $text-color;
+}
+.lh-20 {
+  line-height: 20px;
+}
+.lh-24 {
+  line-height: 24px;
+}
+.lh-30 {
+  line-height: 30px;
+}
+.lh-36 {
+  line-height: 36px;
+}
+.lh-40 {
+  line-height: 40px;
+}
+.fw-b {
+  font-weight: bold;
+}
+.white-no {
+  white-space: nowrap;
+}
+
+// 外框
+.border-light {
+  border: 1px solid $second;
+}
+.border-b {
+  border-bottom: 1px solid $second;
+}
 // RWD
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
 .d-mb-none {
   @media (max-width: 767px) {
     display: none;
   }
 }
+.d-mb-block {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+// 圖片取代文字
+.h1cover {
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+}
+
+// 圖片樣貌
+.ob-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bg-cover {
+  background-size: cover;
+}
+
+// fontawesome設定
 .fas {
   color: $primary;
+}
+.fa-minus,
+.fa-plus {
+  padding: 14px 20px;
+  @media (max-width: 767px) {
+    padding: 14px;
+  }
 }

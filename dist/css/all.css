@@ -135,27 +135,121 @@ table {
 
 .container {
   max-width: 1000px;
-  padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    max-width: 620px;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-3 {
+    max-width: 300px;
+  }
+}
+
+.mx-auto {
   margin: 0 auto;
 }
 
-.container-x {
-  max-width: 1000px;
-  padding: 0 30px;
-  margin: 0 auto;
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mr-5 {
+  margin-right: 5%;
+}
+
+.mr-20 {
+  margin-right: 20px;
 }
 @media (max-width: 767px) {
-  .container-x {
-    padding: 0;
+  .mr-20 {
+    margin-right: 0;
   }
+}
+
+.mt-24 {
+  margin-top: 24px;
 }
 
 .mb-24 {
   margin-bottom: 24px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
 .mb-105 {
   margin-bottom: 105px;
+}
+
+.pt-8 {
+  padding-top: 8px;
+}
+
+.pb-8 {
+  padding-bottom: 8px;
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.px-30 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .p0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .pt-30 {
@@ -170,18 +264,53 @@ table {
   padding-bottom: 20px;
 }
 
-.w-100 {
-  width: 100%;
+.w-20 {
+  width: 20%;
 }
 
-.h-100 {
-  height: 100%;
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .flex-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.fd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .fd-mb-c {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .jcc {
@@ -202,6 +331,10 @@ table {
           align-items: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .bg-dark {
   background-color: #3f5d45;
 }
@@ -210,14 +343,120 @@ table {
   background-color: #eaf0ed;
 }
 
+.bg-link {
+  background-color: #ffe180;
+}
+
+.text-m {
+  font-size: 20px;
+}
+
+.text-l {
+  font-size: 24px;
+}
+
+.text-primary {
+  color: #3f5d45;
+}
+
+.text-second {
+  color: #eaf0ed;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-light {
+  color: #8da291;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+
+.lh-30 {
+  line-height: 30px;
+}
+
+.lh-36 {
+  line-height: 36px;
+}
+
+.lh-40 {
+  line-height: 40px;
+}
+
+.fw-b {
+  font-weight: bold;
+}
+
+.white-no {
+  white-space: nowrap;
+}
+
+.border-light {
+  border: 1px solid #eaf0ed;
+}
+
+.border-b {
+  border-bottom: 1px solid #eaf0ed;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
 @media (max-width: 767px) {
   .d-mb-none {
     display: none;
   }
 }
 
+@media (max-width: 767px) {
+  .d-mb-block {
+    display: block;
+  }
+}
+
+.h1cover {
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+}
+
+.ob-cover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
 .fas {
   color: #3f5d45;
+}
+
+.fa-minus,
+.fa-plus {
+  padding: 14px 20px;
+}
+@media (max-width: 767px) {
+  .fa-minus,
+.fa-plus {
+    padding: 14px;
+  }
 }
 
 body {
@@ -235,6 +474,7 @@ body a {
 body *,
 body *::before,
 body *::after {
+  line-height: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -252,9 +492,6 @@ body input:focus {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg") no-repeat center;
   width: 230px;
   height: 40px;
-  white-space: nowrap;
-  text-indent: 101%;
-  overflow: hidden;
 }
 @media (max-width: 767px) {
   .logo {
@@ -263,67 +500,179 @@ body input:focus {
   }
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 30px 0;
-}
-.header .navList li {
-  margin-left: 60px;
-}
-.header .navList :nth-child(4) {
+.navList :nth-child(4) {
   margin-left: 80px;
 }
-.header .navList a {
-  font-weight: bold;
-  color: #3f5d45;
+.navList a {
   border-bottom: 2px solid transparent;
-  padding: 10px;
 }
-.header .navList a:hover {
+.navList a:hover {
   border-bottom: 2px solid #eaf0ed;
 }
-@media (max-width: 767px) {
-  .header .navList {
-    display: none;
-  }
-}
 
-.headerBar {
-  display: none;
-}
-@media (max-width: 767px) {
-  .headerBar {
-    display: block;
-  }
-}
-.headerBar .fa-bars {
-  color: #3f5d45;
-}
-.headerBar .menuList {
+.menuList {
   max-height: 0;
   overflow: hidden;
 }
 
-.shopMB {
-  display: none;
-}
 @media (max-width: 767px) {
-  .shopMB {
-    display: block;
+  .subscribeInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
+@media (max-width: 767px) {
+  .accountLogo {
+    padding-bottom: 30px;
+  }
+}
+
+.memberEmail {
+  max-width: 380px;
+}
+@media (max-width: 540px) {
+  .memberEmail {
+    width: 300px;
+  }
+}
+
+.textInput {
+  width: 80%;
+  background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/email_black_24dp.svg") 16px no-repeat;
+  background-color: #eaf0ed;
+  padding: 16px 45px;
+}
+
+.emailBtn {
+  width: 20%;
+}
+.emailBtn a {
+  padding: 20px 24px;
+}
+.emailBtn img {
+  width: 16px;
+  height: 16px;
+}
+
+.contact {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.contactWay {
+  height: 350px;
+}
+
+.social :nth-child(1) {
+  margin-right: 8px;
+}
+.social img {
+  width: 32px;
+  height: 32px;
+}
+
+.footerSlogan img {
+  width: 60px;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.logo {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg") no-repeat center;
+  width: 230px;
+  height: 40px;
+}
+@media (max-width: 767px) {
+  .logo {
+    background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/logotype-lg-dark.svg") no-repeat center;
+    width: 170px;
+  }
+}
+
+.navList :nth-child(4) {
+  margin-left: 80px;
+}
+.navList a {
+  border-bottom: 2px solid transparent;
+}
+.navList a:hover {
+  border-bottom: 2px solid #eaf0ed;
+}
+
+.menuList {
+  max-height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .subscribeInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .accountLogo {
+    padding-bottom: 30px;
+  }
+}
+
+.memberEmail {
+  max-width: 380px;
+}
+@media (max-width: 540px) {
+  .memberEmail {
+    width: 300px;
+  }
+}
+
+.textInput {
+  width: 80%;
+  background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/email_black_24dp.svg") 16px no-repeat;
+  background-color: #eaf0ed;
+  padding: 16px 45px;
+}
+
+.emailBtn {
+  width: 20%;
+}
+.emailBtn a {
+  padding: 20px 24px;
+}
+.emailBtn img {
+  width: 16px;
+  height: 16px;
+}
+
+.contact {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.contactWay {
+  height: 350px;
+}
+
+.social :nth-child(1) {
+  margin-right: 8px;
+}
+.social img {
+  width: 32px;
+  height: 32px;
+}
+
+.footerSlogan img {
+  width: 60px;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
 .banner-index {
-  max-width: 940px;
-  margin: 0 auto;
   background: url("https://bit.ly/2OhbMHr") no-repeat center;
   background-size: cover;
   height: 496px;
@@ -336,21 +685,18 @@ body input:focus {
 }
 
 .item {
-  margin: 0 auto;
   max-width: 780px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: -70px;
   margin-bottom: 80px;
 }
+@media (max-width: 900px) {
+  .item {
+    margin-top: -20px;
+  }
+}
 @media (max-width: 767px) {
   .item {
-    margin-top: 0;
-    margin-bottom: 0px;
+    margin: 0 auto;
   }
 }
 
@@ -359,7 +705,6 @@ body input:focus {
 .item3 {
   width: 33.33%;
   height: 256px;
-  background-size: cover;
 }
 @media (max-width: 767px) {
   .item1,
@@ -391,9 +736,6 @@ body input:focus {
           backdrop-filter: blur(5px);
 }
 .cover h2 {
-  color: white;
-  font-size: 24px;
-  line-height: 30px;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -407,15 +749,8 @@ body input:focus {
   font-weight: bold;
 }
 
-.bg-light {
-  background-color: #eaf0ed;
-  height: 420px;
-}
-
 .mainContent {
   height: 420px;
-  background-color: #eaf0ed;
-  padding: 0 30px;
 }
 @media (max-width: 900px) {
   .mainContent {
@@ -430,16 +765,6 @@ body input:focus {
   }
 }
 
-.article {
-  max-width: 940px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 @media (max-width: 767px) {
   .article {
     width: 100%;
@@ -457,11 +782,7 @@ body input:focus {
 }
 .articlePic img {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: -20px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 @media (max-width: 900px) {
   .articlePic {
@@ -483,15 +804,11 @@ body input:focus {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 100%;
     height: 250px;
   }
 }
 
 .articleContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -503,7 +820,6 @@ body input:focus {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  color: #8da291;
   line-height: 25px;
 }
 .articleContent p:nth-child(1) {
@@ -585,7 +901,6 @@ body input:focus {
   background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/lg-%E6%83%B3%E5%90%83%E7%94%9C%E9%BB%9E%E6%98%AF%E4%B8%8D%E9%9C%80%E8%A6%81%E7%90%86%E7%94%B1%E7%9A%84.svg") no-repeat center;
   width: 90px;
   height: 330px;
-  background-size: cover;
 }
 @media (max-width: 768px) {
   .subject {
@@ -605,22 +920,10 @@ body input:focus {
   }
 }
 
-.selectList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .selectList li {
   width: 32%;
 }
 @media (max-width: 767px) {
-  .selectList {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .selectList li {
     width: 100%;
     height: auto;
@@ -643,10 +946,6 @@ body input:focus {
 }
 
 .highlights {
-  background-color: #3f5d45;
-  color: #eaf0ed;
-  text-align: center;
-  line-height: 20px;
   width: 36px;
   padding: 10px;
   letter-spacing: 1.5px;
@@ -670,11 +969,6 @@ body input:focus {
      object-fit: cover;
 }
 
-.productName {
-  text-align: center;
-  color: #3f5d45;
-}
-
 .itemName {
   width: 60%;
   border-right: 1px solid #eaf0ed;
@@ -686,37 +980,43 @@ body input:focus {
   width: 40%;
   padding: 14px;
   border-right: 1px solid #eaf0ed;
-  font-weight: bold;
 }
 
 .addCart {
-  background-color: #eaf0ed;
   padding: 16px;
-  font-weight: bold;
-  color: #3f5d45;
-  font-weight: bolder;
 }
 .addCart:hover {
   background-color: #3f5d45;
   color: #eaf0ed;
 }
 
-.subscribe {
-  background-color: #3f5d45;
-  padding: 30px 0px;
+.logo {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg") no-repeat center;
+  width: 230px;
+  height: 40px;
+}
+@media (max-width: 767px) {
+  .logo {
+    background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/logotype-lg-dark.svg") no-repeat center;
+    width: 170px;
+  }
 }
 
-.subscribeInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.navList :nth-child(4) {
+  margin-left: 80px;
 }
+.navList a {
+  border-bottom: 2px solid transparent;
+}
+.navList a:hover {
+  border-bottom: 2px solid #eaf0ed;
+}
+
+.menuList {
+  max-height: 0;
+  overflow: hidden;
+}
+
 @media (max-width: 767px) {
   .subscribeInfo {
     -webkit-box-orient: vertical;
@@ -731,15 +1031,9 @@ body input:focus {
     padding-bottom: 30px;
   }
 }
-.accountLogo p {
-  font-size: 24px;
-  line-height: 30px;
-  color: #eaf0ed;
-  margin-left: 20px;
-}
 
 .memberEmail {
-  width: 380px;
+  max-width: 380px;
 }
 @media (max-width: 540px) {
   .memberEmail {
@@ -752,11 +1046,9 @@ body input:focus {
   background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/email_black_24dp.svg") 16px no-repeat;
   background-color: #eaf0ed;
   padding: 16px 45px;
-  font-size: 24px;
 }
 
 .emailBtn {
-  background-color: #ffe180;
   width: 20%;
 }
 .emailBtn a {
@@ -773,60 +1065,7 @@ body input:focus {
 }
 
 .contactWay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   height: 350px;
-}
-
-.contactInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-@media (max-width: 767px) {
-  .contactInfo {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-.info {
-  margin-bottom: 30px;
-}
-.info p {
-  color: #3f5d45;
-  line-height: 24px;
-}
-@media (max-width: 767px) {
-  .info {
-    display: none;
-  }
-}
-
-.infoMobile {
-  display: none;
-}
-@media (max-width: 767px) {
-  .infoMobile {
-    display: block;
-    margin-bottom: 40px;
-  }
-  .infoMobile p {
-    color: #3f5d45;
-    line-height: 24px;
-  }
 }
 
 .social :nth-child(1) {
@@ -837,120 +1076,10 @@ body input:focus {
   height: 32px;
 }
 
-.rightsMobile {
-  display: none;
-}
-@media (max-width: 767px) {
-  .rightsMobile {
-    color: #3f5d45;
-    display: block;
-    margin-top: 24px;
-  }
-}
-
-.rightsPC {
-  color: #3f5d45;
-}
-@media (max-width: 767px) {
-  .rightsPC .PC {
-    display: none;
-  }
-}
-
-.footerSlogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
 .footerSlogan img {
   width: 60px;
   margin-left: auto;
   margin-bottom: 50px;
-}
-@media (max-width: 767px) {
-  .footerSlogan {
-    display: none;
-  }
-}
-
-.logo {
-  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg") no-repeat center;
-  width: 230px;
-  height: 40px;
-  white-space: nowrap;
-  text-indent: 101%;
-  overflow: hidden;
-}
-@media (max-width: 767px) {
-  .logo {
-    background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/logotype-lg-dark.svg") no-repeat center;
-    width: 170px;
-  }
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 30px 0;
-}
-.header .navList li {
-  margin-left: 60px;
-}
-.header .navList :nth-child(4) {
-  margin-left: 80px;
-}
-.header .navList a {
-  font-weight: bold;
-  color: #3f5d45;
-  border-bottom: 2px solid transparent;
-  padding: 10px;
-}
-.header .navList a:hover {
-  border-bottom: 2px solid #eaf0ed;
-}
-@media (max-width: 767px) {
-  .header .navList {
-    display: none;
-  }
-}
-
-.headerBar {
-  display: none;
-}
-@media (max-width: 767px) {
-  .headerBar {
-    display: block;
-  }
-}
-.headerBar .fa-bars {
-  color: #3f5d45;
-}
-.headerBar .menuList {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.shopMB {
-  display: none;
-}
-@media (max-width: 767px) {
-  .shopMB {
-    display: block;
-  }
 }
 
 .banner-product {
@@ -1140,22 +1269,33 @@ body input:focus {
   color: #3f5d45;
 }
 
-.subscribe {
-  background-color: #3f5d45;
-  padding: 30px 0px;
+.logo {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg") no-repeat center;
+  width: 230px;
+  height: 40px;
+}
+@media (max-width: 767px) {
+  .logo {
+    background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/logotype-lg-dark.svg") no-repeat center;
+    width: 170px;
+  }
 }
 
-.subscribeInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.navList :nth-child(4) {
+  margin-left: 80px;
 }
+.navList a {
+  border-bottom: 2px solid transparent;
+}
+.navList a:hover {
+  border-bottom: 2px solid #eaf0ed;
+}
+
+.menuList {
+  max-height: 0;
+  overflow: hidden;
+}
+
 @media (max-width: 767px) {
   .subscribeInfo {
     -webkit-box-orient: vertical;
@@ -1170,15 +1310,9 @@ body input:focus {
     padding-bottom: 30px;
   }
 }
-.accountLogo p {
-  font-size: 24px;
-  line-height: 30px;
-  color: #eaf0ed;
-  margin-left: 20px;
-}
 
 .memberEmail {
-  width: 380px;
+  max-width: 380px;
 }
 @media (max-width: 540px) {
   .memberEmail {
@@ -1189,14 +1323,11 @@ body input:focus {
 .textInput {
   width: 80%;
   background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/email_black_24dp.svg") 16px no-repeat;
-  color: #3f5d45;
   background-color: #eaf0ed;
   padding: 16px 45px;
-  font-size: 24px;
 }
 
 .emailBtn {
-  background-color: #ffe180;
   width: 20%;
 }
 .emailBtn a {
@@ -1213,60 +1344,7 @@ body input:focus {
 }
 
 .contactWay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   height: 350px;
-}
-
-.contactInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-@media (max-width: 767px) {
-  .contactInfo {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-.info {
-  margin-bottom: 30px;
-}
-.info p {
-  color: #3f5d45;
-  line-height: 24px;
-}
-@media (max-width: 767px) {
-  .info {
-    display: none;
-  }
-}
-
-.infoMobile {
-  display: none;
-}
-@media (max-width: 767px) {
-  .infoMobile {
-    display: block;
-    margin-bottom: 40px;
-  }
-  .infoMobile p {
-    color: #3f5d45;
-    line-height: 24px;
-  }
 }
 
 .social :nth-child(1) {
@@ -1277,120 +1355,10 @@ body input:focus {
   height: 32px;
 }
 
-.rightsMobile {
-  display: none;
-}
-@media (max-width: 767px) {
-  .rightsMobile {
-    color: #3f5d45;
-    display: block;
-    margin-top: 24px;
-  }
-}
-
-.rightsPC {
-  color: #3f5d45;
-}
-@media (max-width: 767px) {
-  .rightsPC .PC {
-    display: none;
-  }
-}
-
-.footerSlogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
 .footerSlogan img {
   width: 60px;
   margin-left: auto;
   margin-bottom: 50px;
-}
-@media (max-width: 767px) {
-  .footerSlogan {
-    display: none;
-  }
-}
-
-.logo {
-  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg") no-repeat center;
-  width: 230px;
-  height: 40px;
-  white-space: nowrap;
-  text-indent: 101%;
-  overflow: hidden;
-}
-@media (max-width: 767px) {
-  .logo {
-    background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/logotype-lg-dark.svg") no-repeat center;
-    width: 170px;
-  }
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 30px 0;
-}
-.header .navList li {
-  margin-left: 60px;
-}
-.header .navList :nth-child(4) {
-  margin-left: 80px;
-}
-.header .navList a {
-  font-weight: bold;
-  color: #3f5d45;
-  border-bottom: 2px solid transparent;
-  padding: 10px;
-}
-.header .navList a:hover {
-  border-bottom: 2px solid #eaf0ed;
-}
-@media (max-width: 767px) {
-  .header .navList {
-    display: none;
-  }
-}
-
-.headerBar {
-  display: none;
-}
-@media (max-width: 767px) {
-  .headerBar {
-    display: block;
-  }
-}
-.headerBar .fa-bars {
-  color: #3f5d45;
-}
-.headerBar .menuList {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.shopMB {
-  display: none;
-}
-@media (max-width: 767px) {
-  .shopMB {
-    display: block;
-  }
 }
 
 .login {
@@ -1581,22 +1549,33 @@ body input:focus {
   }
 }
 
-.subscribe {
-  background-color: #3f5d45;
-  padding: 30px 0px;
+.logo {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg") no-repeat center;
+  width: 230px;
+  height: 40px;
+}
+@media (max-width: 767px) {
+  .logo {
+    background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/logotype-lg-dark.svg") no-repeat center;
+    width: 170px;
+  }
 }
 
-.subscribeInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.navList :nth-child(4) {
+  margin-left: 80px;
 }
+.navList a {
+  border-bottom: 2px solid transparent;
+}
+.navList a:hover {
+  border-bottom: 2px solid #eaf0ed;
+}
+
+.menuList {
+  max-height: 0;
+  overflow: hidden;
+}
+
 @media (max-width: 767px) {
   .subscribeInfo {
     -webkit-box-orient: vertical;
@@ -1611,15 +1590,9 @@ body input:focus {
     padding-bottom: 30px;
   }
 }
-.accountLogo p {
-  font-size: 24px;
-  line-height: 30px;
-  color: #eaf0ed;
-  margin-left: 20px;
-}
 
 .memberEmail {
-  width: 380px;
+  max-width: 380px;
 }
 @media (max-width: 540px) {
   .memberEmail {
@@ -1630,14 +1603,11 @@ body input:focus {
 .textInput {
   width: 80%;
   background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/email_black_24dp.svg") 16px no-repeat;
-  color: #3f5d45;
   background-color: #eaf0ed;
   padding: 16px 45px;
-  font-size: 24px;
 }
 
 .emailBtn {
-  background-color: #ffe180;
   width: 20%;
 }
 .emailBtn a {
@@ -1654,60 +1624,7 @@ body input:focus {
 }
 
 .contactWay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   height: 350px;
-}
-
-.contactInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-@media (max-width: 767px) {
-  .contactInfo {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-.info {
-  margin-bottom: 30px;
-}
-.info p {
-  color: #3f5d45;
-  line-height: 24px;
-}
-@media (max-width: 767px) {
-  .info {
-    display: none;
-  }
-}
-
-.infoMobile {
-  display: none;
-}
-@media (max-width: 767px) {
-  .infoMobile {
-    display: block;
-    margin-bottom: 40px;
-  }
-  .infoMobile p {
-    color: #3f5d45;
-    line-height: 24px;
-  }
 }
 
 .social :nth-child(1) {
@@ -1718,45 +1635,79 @@ body input:focus {
   height: 32px;
 }
 
-.rightsMobile {
-  display: none;
-}
-@media (max-width: 767px) {
-  .rightsMobile {
-    color: #3f5d45;
-    display: block;
-    margin-top: 24px;
-  }
-}
-
-.rightsPC {
-  color: #3f5d45;
-}
-@media (max-width: 767px) {
-  .rightsPC .PC {
-    display: none;
-  }
-}
-
-.footerSlogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
 .footerSlogan img {
   width: 60px;
   margin-left: auto;
   margin-bottom: 50px;
 }
+
+.cartPic {
+  width: 110px;
+  height: 110px;
+}
 @media (max-width: 767px) {
-  .footerSlogan {
-    display: none;
+  .cartPic {
+    width: 100%;
+    margin-right: 16px;
+  }
+}
+.cartPic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cartInfo {
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .cartInfo {
+    margin-bottom: 30px;
+  }
+}
+
+.cartPart {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .cartPart {
+    margin-bottom: 0;
+  }
+}
+
+.buyProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 900px) {
+  .buyProduct {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .cartAmountMB {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.amountInfo {
+  padding: 16px 18px;
+}
+
+.cartNumber {
+  padding: 14px 20px;
+}
+
+@media (max-width: 900px) {
+  .totalPrice {
+    margin-bottom: 8px;
   }
 }
