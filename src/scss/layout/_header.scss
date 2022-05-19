@@ -1,13 +1,19 @@
 // header
+.logoLink {
+  width: 220px;
+  @media (max-width: 767px) {
+    width: 120px;
+  }
+}
 .logo {
   background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg')
     no-repeat center;
-  width: 230px;
-  height: 40px;
+  width: 100%;
+  aspect-ratio: 1/0.18;
   @media (max-width: 767px) {
     background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/logotype-lg-dark.svg')
       no-repeat center;
-    width: 170px;
+    aspect-ratio: 1/0.15;
   }
 }
 .navList {
@@ -21,7 +27,32 @@
     }
   }
 }
+.phoneBar {
+  @media (max-width: 767px) {
+    display: block;
+    display: flex;
+  }
+}
 .menuList {
   max-height: 0;
+  position: absolute;
+  top: 80px;
+  z-index: 999;
+  height: 100vh;
+  left: 0;
+  right: 0;
   overflow: hidden;
+  background-color: $primary;
+  transition: max-height 1s;
+  li {
+    &:hover {
+      background-color: $link-color;
+    }
+  }
+}
+.menuList-height {
+  background-color: rgba(63, 93, 69, 0.5);
+  .menuList {
+    max-height: 1000px;
+  }
 }

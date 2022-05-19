@@ -16,70 +16,72 @@
     <title>甜點網</title>
   </head>
   <body>
-    <div class="container mx-auto px-30">
-      <div class="header py-30 d-flex jcsb alc">
-        <div class="headerBar d-none d-mb-block">
-          <a href="" class="menu_btn">
-            <i class="fas fa-bars fa-2x"></i>
+    <div class="PCbar container d-flex jcsb alc mx-auto p-30 d-mb-none">
+      <a href="index.html" class="logoLink">
+        <h1 class="logo h1cover"></h1>
+      </a>
+      <ul class="navList d-flex alc d-mb-none">
+        <li>
+          <a href="index.html" class="fw-b text-primary px-30">首頁</a>
+        </li>
+        <li>
+          <a href="product.html" class="fw-b text-primary px-30">甜點</a>
+        </li>
+        <li>
+          <a href="login.html" class="fw-b text-primary px-30">登入</a>
+        </li>
+        <li>
+          <a href="cart.html">
+            <i class="fas fa-2x fa-solid fa-cart-shopping"></i>
           </a>
-          <ul class="menuList">
-            <li>
-              <a
-                href="index.html"
-                target="_blank"
-                class="fw-b text-primary px-30"
-              >
-                首頁
-              </a>
-            </li>
-            <li>
-              <a
-                href="product.html"
-                target="_blank"
-                class="fw-b text-primary px-30"
-              >
-                甜點
-              </a>
-            </li>
-            <li>
-              <a
-                href="login.html"
-                target="_blank"
-                class="fw-b text-primary px-30"
-              >
-                登入
-              </a>
-            </li>
-          </ul>
-        </div>
-        <a href="index.html">
-          <h1 class="logo h1cover"></h1>
-        </a>
-        <ul class="navList d-flex alc d-mb-none">
-          <li>
-            <a href="index.html" class="fw-b text-primary px-30">首頁</a>
-          </li>
-          <li>
-            <a href="product.html" class="fw-b text-primary px-30">甜點</a>
-          </li>
-          <li>
-            <a href="login.html" class="fw-b text-primary px-30">登入</a>
-          </li>
-          <li>
-            <a href="cart.html">
-              <i class="fas fa-2x fa-solid fa-cart-shopping"></i>
-            </a>
-          </li>
-        </ul>
-        <a href="cart.html" class="shopMB d-none d-mb-block">
-          <i class="fas fa-solid fa-2x fa-cart-shopping"></i>
-        </a>
-      </div>
+        </li>
+      </ul>
     </div>
-    <div class="container mx-auto px-30 p0">
+    <div class="phoneBar container p-30 d-mb-flex jcsb alc mx-auto d-none">
+      <a href="" class="menu_btn">
+        <i class="fas fa-bars"></i>
+      </a>
+      <a href="index.html" class="logoLink">
+        <h1 class="logo h1cover"></h1>
+      </a>
+      <ul class="menuList">
+        <li>
+          <a
+            href="index.html"
+            target="_blank"
+            class="fw-b text-white text-center p-30"
+          >
+            首頁
+          </a>
+        </li>
+        <li>
+          <a
+            href="product.html"
+            target="_blank"
+            class="fw-b text-white text-center p-30"
+          >
+            甜點
+          </a>
+        </li>
+        <li>
+          <a
+            href="login.html"
+            target="_blank"
+            class="fw-b text-white text-center p-30"
+          >
+            登入
+          </a>
+        </li>
+      </ul>
+      <a href="cart.html" class="shopMB">
+        <i class="fas fa-solid fa-cart-shopping"></i>
+      </a>
+    </div>
+    <div class="bannerIndex container mx-auto">
       <div class="banner-index"></div>
     </div>
-    <div class="item mx-auto d-flex jcc">
+
+    <div class="item d-flex jcc mx-auto">
       <div class="item1 bg-cover">
         <div class="cover d-flex alc jcc">
           <h2 class="text-l text-white lh-30">本日精選</h2>
@@ -96,12 +98,12 @@
         </div>
       </div>
     </div>
-    <div class="mainContent bg-light px-30">
-      <div class="article container d-flex jcsb mx-auto">
-        <div class="articlePic">
-          <img src="https://bit.ly/2xPn7Eq" alt="articlePic" class="ob-cover" />
+    <div class="mainContent-1">
+      <div class="article-1 container mx-auto">
+        <div class="articlePic-1">
+          <img src="https://bit.ly/2xPn7Eq" alt="" />
         </div>
-        <div class="articleContent d-flex">
+        <div class="articleContent-1 d-flex">
           <p class="para1 text-light">
             青山依舊在，幾度夕陽紅。慣看秋月春風。
             一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
@@ -110,17 +112,46 @@
             是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
           </p>
         </div>
-        <div class="articleSlogan">
+        <div class="articleSlogan-1">
           <img
-            src="https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/lg-%E7%82%BA%E4%BB%80%E9%BA%BC%E9%81%B8%E6%93%87%E4%BA%86%E5%81%9A%E7%94%9C%E9%BB%9E.svg"
-            alt="PCslogan"
-            class="PCslogan"
+            src="https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/lg-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%B8%80%E5%AE%9A%E8%A6%81%E5%90%83%E7%94%9C%E9%BB%9E.svg"
+            alt=""
+            class="d-mb-none"
+          />
+          <img
+            src="https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/sm-%E6%A9%AB%E5%BC%8F-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%B8%80%E5%AE%9A%E8%A6%81%E5%90%83%E7%94%9C%E9%BB%9E.svg"
+            alt=""
+            class="d-none d-mb-block"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="mainContent-2">
+      <div class="article-2 container mx-auto">
+        <div class="articleContent-2 d-flex">
+          <p class="para1 text-light">
+            青山依舊在，幾度夕陽紅。慣看秋月春風。
+            一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+          </p>
+          <p class="text-light">
+            是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+          </p>
+        </div>
+        <div class="articleSlogan-2">
+          <img
+            src="https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/lg-%E7%82%BA%E4%BB%80%E9%BA%BC%E9%81%B8%E6%93%87%E4%BA%86%E5%81%9A%E7%94%9C%E9%BB%9E.svg
+          "
+            alt=""
+            class="d-mb-none"
           />
           <img
             src="https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/sm-%E6%A9%AB%E5%BC%8F-%E7%82%BA%E4%BB%80%E9%BA%BC%E9%81%B8%E6%93%87%E4%BA%86%E5%81%9A%E7%94%9C%E9%BB%9E.svg"
-            alt="MBslogan"
-            class="MBslogan"
+            alt=""
+            class="d-none d-mb-block"
           />
+        </div>
+        <div class="articlePic-2">
+          <img src="https://bit.ly/2zzAQS4" alt="" />
         </div>
       </div>
     </div>
@@ -148,11 +179,16 @@
               </div>
             </div>
             <div class="productName text-center text-primary">
-              <div class="d-flex alc">
-                <h3 class="itemName text-m">焦糖馬卡龍</h3>
-                <p class="price text-m text-primary fw-b">NT 450</p>
+              <div class="productItem d-flex alc">
+                <h3 class="itemName text-m d-flex jcc alc">焦糖馬卡龍</h3>
+                <p class="price text-m text-primary fw-b d-flex jcc alc">
+                  NT 450
+                </p>
               </div>
-              <a href="#" class="addCart text-l text-primary bg-light fw-b">
+              <a
+                href="#"
+                class="addCart bg-light text-l text-primary fw-b d-flex jcc alc"
+              >
                 加入購物車
               </a>
             </div>
@@ -176,12 +212,17 @@
                 />
               </div>
             </div>
-            <div class="productName">
-              <div class="d-flex alc">
-                <h3 class="itemName text-m">焦糖馬卡龍</h3>
-                <p class="price text-m text-primary fw-b">NT 450</p>
+            <div class="productName text-center text-primary">
+              <div class="productItem d-flex alc">
+                <h3 class="itemName text-m d-flex jcc alc">焦糖馬卡龍</h3>
+                <p class="price text-m text-primary fw-b d-flex jcc alc">
+                  NT 450
+                </p>
               </div>
-              <a href="#" class="addCart text-l text-primary bg-light fw-b">
+              <a
+                href="#"
+                class="addCart bg-light text-l text-primary fw-b d-flex jcc alc"
+              >
                 加入購物車
               </a>
             </div>
@@ -205,12 +246,17 @@
                 />
               </div>
             </div>
-            <div class="productName">
-              <div class="d-flex alc">
-                <h3 class="itemName text-m">焦糖馬卡龍</h3>
-                <p class="price text-m text-primary fw-b">NT 450</p>
+            <div class="productName text-center text-primary">
+              <div class="productItem d-flex alc">
+                <h3 class="itemName text-m d-flex jcc alc">焦糖馬卡龍</h3>
+                <p class="price text-m text-primary fw-b d-flex jcc alc">
+                  NT 450
+                </p>
               </div>
-              <a href="#" class="addCart text-l text-primary bg-light fw-b">
+              <a
+                href="#"
+                class="addCart bg-light text-l text-primary fw-b d-flex jcc alc"
+              >
                 加入購物車
               </a>
             </div>
@@ -219,22 +265,22 @@
       </div>
     </div>
     <div class="footer">
-      <div class="bg-dark">
-        <div class="subscribe container mx-auto px-30 py-30 h-100">
-          <div class="subscribeInfo d-flex jcsb alc px-30 p0">
-            <div class="accountLogo d-flex jcsb alc">
-              <a href="member.html" class="d-flex">
+      <div class="register bg-dark">
+        <div class="subscribe container mx-auto p-30 h-100">
+          <div class="subscribeInfo d-flex jcsb alc fd-mb-c">
+            <div class="accountTitle d-flex jcsb alc">
+              <a href="member.html" class="d-flex accountLogo">
                 <img
-                  src="./dist/images/logo-light.svg"
+                  src="https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/logo-light.svg"
                   alt="logo-light"
-                  width="40px"
-                  height="40px"
                 />
               </a>
-              <p class="text-l lh-30 text-second ml-20">訂閱你我的甜蜜郵件</p>
+              <p class="text-lg-l text-l lh-30 text-second ml-20">
+                訂閱你我的甜蜜郵件
+              </p>
             </div>
             <div class="memberEmail d-flex">
-              <input type="text" class="textInput text-l bg-light" />
+              <input type="text" class="textInput text-lg-l text-m bg-light" />
               <div class="emailBtn d-flex jcc alc bg-link">
                 <a href="">
                   <i class="fas fa-solid fa-arrow-right"></i>
@@ -248,11 +294,10 @@
         <div class="container mx-auto px-30 p0">
           <div class="contactWay px-30 d-flex jcsb">
             <div class="contactInfo d-flex jcsb fd-c">
-              <a href="index.html">
+              <a href="index.html" class="footerLogo">
                 <img
-                  src="./dist/images/logotype-lg-dark.svg"
+                  src="https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/logotype-lg-dark.svg"
                   alt="logo-dark"
-                  height="30px"
                 />
               </a>
               <div class="infoMobile d-none d-mb-block mb-40">
@@ -267,27 +312,32 @@
                   <p class="text-primary lh-24">高雄市新興區幸福路 520 號</p>
                 </div>
                 <div class="social d-flex">
-                  <a href="">
-                    <img src="./dist/images/ic-line@.svg" alt="line" />
+                  <a href="#">
+                    <img
+                      src="https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/ic-line%40.svg"
+                      alt="line"
+                    />
                   </a>
-                  <a href="">
-                    <img src="./dist/images/ic-facebook.svg" alt="facebook" />
+                  <a href="#">
+                    <img
+                      src="https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/ic-facebook.svg"
+                      alt="facebook"
+                    />
                   </a>
                 </div>
-                <p class="rightsMobile text-primary d-none d-mb-block mt-24">
+                <p class="text-primary d-none d-mb-block mt-24">
                   © 2018 Sweetaste* All Rights Reserved
                 </p>
               </div>
             </div>
-            <div class="footerSlogan d-flex jcsb fd-c d-mb-none">
-              <div>
+            <div class="d-flex jcsb fd-c d-mb-none">
+              <div class="footerSlogan">
                 <img
-                  src="./dist/images/sm-今天是個吃甜點的好日子.svg"
+                  src="https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/sm-%E4%BB%8A%E5%A4%A9%E6%98%AF%E5%80%8B%E5%90%83%E7%94%9C%E9%BB%9E%E7%9A%84%E5%A5%BD%E6%97%A5%E5%AD%90.svg"
                   alt="slogan"
-                  height="220px"
                 />
               </div>
-              <p class="rightsPC text-primary d-mb-none">
+              <p class="text-primary d-mb-none">
                 © 2018 Sweetaste* All Rights Reserved
               </p>
             </div>
@@ -295,5 +345,12 @@
         </div>
       </div>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./dist/all.js"></script>
   </body>
 </html>

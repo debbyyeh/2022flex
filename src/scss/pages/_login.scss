@@ -2,16 +2,21 @@
 @import '../layout/footer';
 
 // login
-.login {
+.loginContent {
+  padding: 0 30px;
   margin: 60px auto;
+  @media (max-width: 767px) {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+.login {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  padding: 0 30px;
+  max-width: 780px;
   @media (max-width: 767px) {
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0;
+    // max-width: 100%;
   }
 }
 .accountInput,
@@ -20,30 +25,9 @@
   @media (max-width: 767px) {
     width: 100%;
   }
-  > h2 {
-    display: none;
-    @media (max-width: 767px) {
-      display: block;
-      background-color: $primary;
-      font-size: $xxxl;
-      line-height: $xxxl;
-      color: $second;
-      text-align: center;
-      padding: 30px 0;
-    }
-  }
   .MBsocial {
-    display: none;
-    @media (max-width: 767px) {
-      display: block;
-      background-color: $second;
-      padding: 30px;
-    }
     ul {
-      display: flex;
-      justify-content: center;
       li {
-        background-color: $white;
         width: 100%;
         &:nth-child(2) {
           a {
@@ -53,32 +37,23 @@
         }
       }
       a {
-        padding: 20px 13px;
-      }
-      img {
-        width: 80px;
-        height: 40px;
-        margin: 0 auto;
-        object-fit: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 56px;
       }
     }
   }
 }
 .inputLogin {
-  background-color: $primary;
   padding: 0 30px 25px 30px;
   h2 {
-    font-size: $xxxl;
-    line-height: $xxxl;
-    color: $second;
-    text-align: center;
     padding: 40px 0;
   }
   @media (max-width: 767px) {
     padding: 30px;
   }
 }
-
 .formGroup {
   margin-bottom: 16px;
   input {
@@ -91,14 +66,14 @@
 .loginAccount {
   background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/user-solid.svg')
     4%/16px no-repeat;
-  padding: 16px 45px;
-  color: $primary;
+  min-height: 56px;
+  padding-left: 45px;
 }
 .loginPassword {
   background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/vpn_key_FILL0_wght400_GRAD0_opsz48.svg')
     4%/16px no-repeat;
-  padding: 16px 45px;
-  color: $primary;
+  min-height: 56px;
+  padding-left: 45px;
 }
 .checkGroup {
   display: flex;
@@ -109,44 +84,48 @@
   }
 }
 .enterBtn {
-  background-color: $link-color;
   width: 100%;
   a {
-    color: $primary;
-    text-align: center;
+    min-height: 65px;
     padding: 20px;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: bold;
   }
 }
 .inputSocial {
   padding: 40px 30px;
-  background-color: $second;
   h3 {
-    text-align: center;
-    font-size: 24px;
-    line-height: 36px;
-    color: $text-color;
     margin-bottom: 36px;
   }
   li {
-    background-color: $white;
-    // height: 56px;
     &:nth-child(1),
     &:nth-child(2) {
       margin-bottom: 16px;
     }
   }
   a {
-    padding: 18px;
-    img {
-      margin: 0 auto;
-      width: 110px;
-      height: 20px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 56px;
   }
+}
+.facebook {
+  width: 38%;
+  aspect-ratio: 1/0.19;
   @media (max-width: 767px) {
-    display: none;
+    width: 80%;
+  }
+}
+.google {
+  width: 33%;
+  aspect-ratio: 1/0.33;
+  @media (max-width: 767px) {
+    width: 80%;
+  }
+}
+.yahoo {
+  width: 30%;
+  aspect-ratio: 1/0.23;
+  @media (max-width: 767px) {
+    width: 80%;
   }
 }

@@ -1,13 +1,19 @@
 @import '../layout/header';
 @import '../layout/footer';
+
 // banner
+.bannerIndex {
+  padding: 0 30px;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
 .banner-index {
   background: url('https://bit.ly/2OhbMHr') no-repeat center;
   background-size: cover;
-  height: 496px;
+  aspect-ratio: 1/0.52;
   @media (max-width: 768px) {
-    height: 300px;
-    width: 100%;
+    aspect-ratio: 1/0.73;
   }
 }
 .item {
@@ -16,18 +22,19 @@
   margin-bottom: 80px;
   @media (max-width: 900px) {
     margin-top: -20px;
+    margin-bottom: 40px;
   }
   @media (max-width: 767px) {
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
   }
 }
 .item1,
 .item2,
 .item3 {
   width: 33.33%;
-  height: 256px;
+  aspect-ratio: 1/1;
   @media (max-width: 767px) {
-    height: 180px;
+    aspect-ratio: 1/1.44;
   }
 }
 .item1 {
@@ -49,6 +56,10 @@
   h2 {
     writing-mode: vertical-lr;
     letter-spacing: 2px;
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   &:hover {
     background-color: $link-color;
@@ -58,125 +69,148 @@
     }
   }
 }
-.mainContent {
-  height: 420px;
-  @media (max-width: 900px) {
-    padding: 0 15px;
-    height: auto;
+
+.mainContent-1,
+.mainContent-2 {
+  background-color: $second;
+  width: 100%;
+  // height: 420px;
+  margin-bottom: 105px;
+  @media (max-width: 992px) {
+    margin-bottom: 60px;
   }
   @media (max-width: 767px) {
+    height: 100%;
     padding: 0;
     background-color: $white;
-  }
-}
-.article {
-  @media (max-width: 767px) {
-    width: 100%;
+    margin-bottom: 30px;
     flex-direction: column;
   }
 }
-.articlePic {
-  position: relative;
-  height: 460px;
-  width: 460px;
-  img {
-    position: absolute;
-    top: -20px;
-  }
-  @media (max-width: 900px) {
-    width: 420px;
-    height: 420px;
-    img {
-      top: 0;
-    }
-  }
-  @media (max-width: 768px) {
-    width: 350px;
+.article-1,
+.article-2 {
+  padding: 0 30px;
+  display: flex;
+  @media (max-width: 992px) {
+    padding: 0 15px;
   }
   @media (max-width: 767px) {
-    width: 100%;
-    order: 2;
-    height: 250px;
+    padding: 0;
+    flex-direction: column;
   }
 }
-.articleContent {
-  flex-direction: row-reverse;
-  height: 280px;
-  margin-top: 70px;
-  p {
-    writing-mode: vertical-rl;
-    line-height: 25px;
-    &:nth-child(1) {
-      margin-left: 24px;
+.articlePic-1,
+.articlePic-2 {
+  margin-top: -20px;
+  width: 55%;
+  @media (max-width: 992px) {
+    margin-top: 0;
+  }
+  @media (max-width: 767px) {
+    order: 2;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    @media (max-width: 767px) {
+      aspect-ratio: 1/0.66;
     }
+  }
+}
+
+.articleContent-1,
+.articleContent-2 {
+  flex-direction: row-reverse;
+  padding: 70px 0;
+  width: 40%;
+  aspect-ratio: 1/1.09;
+  p {
+    text-align: justify;
+    writing-mode: vertical-rl;
+    line-height: 30px;
+  }
+
+  @media (max-width: 992px) {
+    padding: 40px 0;
   }
   @media (max-width: 767px) {
     order: 3;
     flex-direction: column;
+    width: 100%;
     padding: 30px;
     background-color: $second;
-    height: auto;
-    margin-top: 0;
+    aspect-ratio: initial;
     p {
-      margin-top: 0;
       writing-mode: horizontal-tb;
       line-height: 32px;
-      &:nth-child(1) {
-        margin-left: 0;
-      }
     }
   }
 }
-
-.articleSlogan {
-  position: relative;
-  height: 310px;
-  width: 90px;
-  .PCslogan {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: -20px;
-    object-fit: contain;
-  }
-  .MBslogan {
-    display: none;
-  }
-  @media (max-width: 900px) {
-    width: 70px;
-    height: 280px;
+.articleSlogan-1,
+.articleSlogan-2 {
+  margin-top: -20px;
+  margin-left: 80px;
+  @media (max-width: 992px) {
+    margin-left: 40px;
   }
   @media (max-width: 767px) {
     order: 1;
-    margin: 30px auto;
-    width: 226px;
-    height: 70px;
-    .PCslogan {
-      display: none;
-    }
-    .MBslogan {
-      display: block;
-      position: relative;
-      top: 0;
-      width: 100%;
-      height: auto;
-      object-fit: contain;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+.articleSlogan-1 {
+  width: 11%;
+  img {
+    width: 90px;
+    aspect-ratio: 0.29/1;
+    margin-left: auto;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    img {
+      width: 196px;
+      aspect-ratio: 1/0.306;
+      margin: 0 auto;
     }
   }
 }
-
+.articleSlogan-2 {
+  width: 11%;
+  margin-right: 42px;
+  img {
+    width: 90px;
+    aspect-ratio: 0.29/1;
+    margin-left: auto;
+  }
+  @media (max-width: 992px) {
+    margin-right: 25px;
+  }
+  @media (max-width: 767px) {
+    order: 1;
+    width: 100%;
+    margin-right: 0;
+    img {
+      width: 196px;
+      aspect-ratio: 1/0.306;
+      margin: 0 auto;
+    }
+  }
+}
 .subject {
   margin: 95px auto 80px auto;
   background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/lg-%E6%83%B3%E5%90%83%E7%94%9C%E9%BB%9E%E6%98%AF%E4%B8%8D%E9%9C%80%E8%A6%81%E7%90%86%E7%94%B1%E7%9A%84.svg')
     no-repeat center;
   width: 90px;
-  height: 330px;
+  aspect-ratio: 1/3.6;
   @media (max-width: 768px) {
     background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/sm-%E6%A9%AB%E5%BC%8F-%E6%83%B3%E5%90%83%E7%94%9C%E9%BB%9E%E6%98%AF%E4%B8%8D%E9%9C%80%E8%A6%81%E7%90%86%E7%94%B1%E7%9A%84.svg')
       no-repeat center;
     margin: 30px auto;
     width: 226px;
-    height: 60px;
+    aspect-ratio: 1/0.265;
   }
 }
 .productSelect {
@@ -186,13 +220,17 @@
   }
 }
 .selectList {
+  margin-right: -5px;
+  margin-left: -5px;
   li {
     width: 32%;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   @media (max-width: 767px) {
     li {
       width: 100%;
-      height: auto;
+      // height: auto;
       &:nth-child(2),
       &:nth-child(3) {
         display: none;
@@ -205,10 +243,14 @@
   .selectPic-1,
   .selectPic-2,
   .selectPic-3 {
+    width: 100%;
+    aspect-ratio: 1/1.05;
     img {
       width: 100%;
-      height: auto;
       object-fit: cover;
+    }
+    @media (max-width: 767px) {
+      aspect-ratio: 1/1;
     }
   }
 }
@@ -228,22 +270,24 @@
   top: 20px;
   right: 20px;
   width: 30px;
-  height: 30px;
+  aspect-ratio: 1/1;
   object-fit: cover;
+}
+.productItem {
+  min-height: 56px;
+  border-right: 1px solid $second;
+  border-left: 1px solid $second;
 }
 .itemName {
   width: 60%;
+  padding: 18px 0;
   border-right: 1px solid $second;
-  border-left: 1px solid $second;
-  padding: 14px;
 }
 .price {
   width: 40%;
-  padding: 14px;
-  border-right: 1px solid $second;
 }
 .addCart {
-  padding: 16px;
+  min-height: 65px;
   &:hover {
     background-color: $primary;
     color: $second;

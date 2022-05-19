@@ -36,14 +36,8 @@
 .ml-20 {
   margin-left: 20px;
 }
-.mr-5 {
-  margin-right: 5%;
-}
 .mr-20 {
   margin-right: 20px;
-  @media (max-width: 767px) {
-    margin-right: 0;
-  }
 }
 .mt-24 {
   margin-top: 24px;
@@ -60,9 +54,6 @@
 .mb-60 {
   margin-bottom: 60px;
 }
-.mb-105 {
-  margin-bottom: 105px;
-}
 .pt-8 {
   padding-top: 8px;
 }
@@ -75,10 +66,6 @@
 .pb-16 {
   padding-bottom: 16px;
 }
-.px-30 {
-  padding-right: 30px;
-  padding-left: 30px;
-}
 .py-20 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -88,6 +75,13 @@
     padding-right: 0;
     padding-left: 0;
   }
+}
+.p-30 {
+  padding: 30px;
+}
+.px-30 {
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .py-30 {
   padding-top: 30px;
@@ -117,11 +111,40 @@
 .w-100 {
   width: 100%;
 }
-// 排版
+.min-65 {
+  min-height: 65px;
+}
+
+// RWD
 .d-flex {
   display: flex;
 }
+.d-mb-flex {
+  @media (max-width: 767px) {
+    display: flex;
+  }
+}
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+.d-mb-none {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.d-mb-block {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+// 排版
 .flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-mb-wrap {
   @media (max-width: 767px) {
     flex-wrap: wrap;
   }
@@ -154,16 +177,21 @@
 .bg-light {
   background-color: $second;
 }
+.bg-white {
+  background-color: $white;
+}
 .bg-link {
   background-color: $link-color;
 }
 
-//字體
 .text-m {
   font-size: 20px;
 }
 .text-l {
   font-size: 24px;
+}
+.text-xl {
+  font-size: 36px;
 }
 .text-primary {
   color: $primary;
@@ -192,6 +220,9 @@
 .lh-40 {
   line-height: 40px;
 }
+.lh-65 {
+  line-height: 65px;
+}
 .fw-b {
   font-weight: bold;
 }
@@ -206,23 +237,7 @@
 .border-b {
   border-bottom: 1px solid $second;
 }
-// RWD
-.d-none {
-  display: none;
-}
-.d-block {
-  display: block;
-}
-.d-mb-none {
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
-.d-mb-block {
-  @media (max-width: 767px) {
-    display: block;
-  }
-}
+
 // 圖片取代文字
 .h1cover {
   white-space: nowrap;
@@ -244,10 +259,10 @@
 .fas {
   color: $primary;
 }
-.fa-minus,
-.fa-plus {
-  padding: 14px 20px;
-  @media (max-width: 767px) {
-    padding: 14px;
-  }
-}
+// .fa-minus,
+// .fa-plus {
+//   padding: 14px 20px;
+//   @media (max-width: 767px) {
+//     padding: 14px;
+//   }
+// }
