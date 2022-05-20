@@ -16,10 +16,20 @@ body {
     box-sizing: border-box;
   }
   input {
+    -moz-appearance: none;
     outline: none;
     border-radius: 0;
     border: none;
     background-color: $second;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    -moz-appearance: none;
+    outline: none;
+    border-radius: 0;
+    border: none;
     &:focus {
       outline: none;
     }

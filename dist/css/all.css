@@ -488,12 +488,22 @@ body *::after {
           box-sizing: border-box;
 }
 body input {
+  -moz-appearance: none;
   outline: none;
   border-radius: 0;
   border: none;
   background-color: #eaf0ed;
 }
 body input:focus {
+  outline: none;
+}
+body button {
+  -moz-appearance: none;
+  outline: none;
+  border-radius: 0;
+  border: none;
+}
+body button:focus {
   outline: none;
 }
 
@@ -1016,8 +1026,7 @@ body input:focus {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
   }
 }
 
