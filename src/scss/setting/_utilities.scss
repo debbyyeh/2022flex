@@ -1,25 +1,12 @@
-.container {
-  max-width: $container-s;
-}
-
-//格線
-.col-md-6 {
-  @media (min-width: 768px) {
-    max-width: 620px;
-  }
-}
-.col-md-3 {
-  @media (min-width: 768px) {
-    max-width: 300px;
-  }
-}
-
 // 距離
 .mx-auto {
   margin: 0 auto;
 }
 .mb-4 {
   margin-bottom: 4px;
+}
+.mr-8 {
+  margin-right: 8px;
 }
 .mb-8 {
   margin-bottom: 8px;

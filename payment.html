@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/css/all.css" />
-    <link rel="stylesheet" href="./dist/css/cart.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="../dist/css/all.css" />
+    <link rel="stylesheet" href="../dist/css/payment.css" />
+
+    <!-- fontawesome/material -->
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;900&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <title>甜點網-購物車頁面</title>
+    <title>甜點網-結帳頁面</title>
   </head>
   <body>
     <div class="PCbar container d-flex jcsb alc mx-auto p-30 d-mb-none">
@@ -78,177 +85,112 @@
         <i class="fas fa-solid fa-cart-shopping"></i>
       </a>
     </div>
-    <h2
-      class="text-l text-center text-primary fw-b bg-light py-20 mb-30 d-none d-mb-block"
-    >
-      您的購物車
-    </h2>
-    <div class="cartInfo container px-30 mx-auto d-flex jcsb fd-mb-c">
-      <div class="cartList">
-        <h2
-          class="text-l text-center text-primary fw-b min-65 lh-65 bg-light mb-30 d-mb-none"
+    <div class="payment-layout container d-flex jcc mx-auto">
+      <div class="col-md-6 col-sm-12">
+        <div class="progressInfo bg-dark">
+          <div class="d-flex alc jcsb mb-30">
+            <h2 class="text-xl text-second">運送</h2>
+            <div class="progressBar">
+              <ul class="bar">
+                <li>
+                  <span class="barStep"></span>
+                </li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+          <div class="form d-flex mb-16">
+            <div class="orderForm mr-8 w-50">
+              <label for="last-name">姓氏</label>
+              <input type="text" placeholder="王" />
+            </div>
+            <div class="orderForm d-flex w-50">
+              <label for="first-name">名字</label>
+              <input type="text" placeholder="小明" />
+            </div>
+          </div>
+          <div class="form mb-16">
+            <div class="orderForm">
+              <label for="tele">電話</label>
+              <input type="text" id="tele" placeholder="0912-345-678" />
+            </div>
+          </div>
+          <div class="form">
+            <div class="orderForm">
+              <label for="address">地址</label>
+              <div class="d-flex mb-8">
+                <select name="address" id="address" class="mr-8">
+                  <option value="Taipei">台北</option>
+                  <option value="Taichung">台中</option>
+                  <option value="Kaoshuang">高雄</option>
+                </select>
+                <select name="district" id="district">
+                  <option value="Sanchong">三重</option>
+                  <option value="Xinzhung">新莊</option>
+                  <option value="Xinyi">信義</option>
+                </select>
+              </div>
+              <input type="text" id="addressInfo" placeholder="幸福路 520 號" />
+            </div>
+          </div>
+        </div>
+        <a
+          href=""
+          class="text-primary fw-b text-center bg-link text-m py-20 min-65"
         >
-          您的購物車
-        </h2>
-        <div class="cartPart d-flex jcsb alc pb-20 border-b">
-          <div class="cartPic">
-            <img src="https://bit.ly/2zBDAxX" alt="cartProduct" />
-          </div>
-          <div class="buyProduct jcsb">
-            <div class="">
-              <p class="text-m text-primary lh-20 mb-4 mr-20">
-                焦糖馬卡龍
-              </p>
-              <p class="text-primary lh-20 totalPrice">NT$ 450</p>
-            </div>
-            <div class="productNum d-flex">
-              <a href="" class="text-center border-light">
-                <i class="fas fa-minus"></i>
-              </a>
-              <p
-                href=""
-                class="cartNumber text-center text-primary border-light"
-              >
-                2
-              </p>
-              <a href="" class="text-center border-light">
-                <i class="fas fa-plus"></i>
-              </a>
-            </div>
-          </div>
-          <p class="text-m lh-20 text-primary fw-b d-mb-none">NT$ 900</p>
-          <a href="" class="d-mb-none"><i class="fas fa-trash"></i></a>
-        </div>
-        <div class="cartAmountMB jcsb pb-8 pt-8 border-b mb-30">
-          <a href=""><i class="fas fa-trash"></i></a>
-          <p class="text-m lh-20 text-primary fw-b ml-auto">
-            NT$ 900
-          </p>
-        </div>
-        <div class="cartPart d-flex jcsb alc pb-20 border-b">
-          <div class="cartPic">
-            <img src="https://bit.ly/2zBDAxX" alt="cartProduct" />
-          </div>
-          <div class="buyProduct jcsb">
-            <div class="">
-              <p class="text-m text-primary lh-20 mb-4 mr-20">
-                焦糖馬卡龍
-              </p>
-              <p class="text-primary lh-20 totalPrice">NT$ 450</p>
-            </div>
-            <div class="productNum d-flex">
-              <a href="" class="text-center border-light">
-                <i class="fas fa-minus"></i>
-              </a>
-              <p
-                href=""
-                class="cartNumber text-center text-primary border-light"
-              >
-                2
-              </p>
-              <a href="" class="text-center border-light">
-                <i class="fas fa-plus"></i>
-              </a>
-            </div>
-          </div>
-          <p class="text-m lh-20 text-primary fw-b d-mb-none">NT$ 900</p>
-          <a href="" class="d-mb-none"><i class="fas fa-trash"></i></a>
-        </div>
-        <div class="cartAmountMB jcsb pb-8 pt-8 border-b mb-30">
-          <a href=""><i class="fas fa-trash"></i></a>
-          <p class="text-m lh-20 text-primary fw-b ml-auto">
-            NT$ 900
-          </p>
-        </div>
-        <div class="cartPart d-flex jcsb alc pb-20 border-b">
-          <div class="cartPic">
-            <img src="https://bit.ly/2zBDAxX" alt="cartProduct" />
-          </div>
-          <div class="buyProduct jcsb">
-            <div class="">
-              <p class="text-m text-primary lh-20 mb-4 mr-20">
-                焦糖馬卡龍
-              </p>
-              <p class="text-primary lh-20 totalPrice">NT$ 450</p>
-            </div>
-            <div class="productNum d-flex">
-              <a href="" class="text-center border-light">
-                <i class="fas fa-minus"></i>
-              </a>
-              <p
-                href=""
-                class="cartNumber text-center text-primary border-light"
-              >
-                2
-              </p>
-              <a href="" class="text-center border-light">
-                <i class="fas fa-plus"></i>
-              </a>
-            </div>
-          </div>
-          <p class="text-m lh-20 text-primary fw-b d-mb-none">NT$ 900</p>
-          <a href="" class="d-mb-none"><i class="fas fa-trash"></i></a>
-        </div>
-        <div class="cartAmountMB jcsb pb-8 pt-8 border-b mb-30">
-          <a href=""><i class="fas fa-trash"></i></a>
-          <p class="text-m lh-20 text-primary fw-b ml-auto">
-            NT$ 900
-          </p>
-        </div>
+          下一步
+        </a>
       </div>
-      <div class="cartPrice d-mb-none">
-        <div class="amountInfo bg-dark text-second">
-          <h3 class="text-l text-center lh-20 fw-b pb-16 mb-16 border-b">
+      <div class="col-md-4 d-mb-none">
+        <div class="orderAmount mb-20">
+          <h3 class="text-light text-m text-center fw-b bg-light min-65 lh-65">
             訂單摘要
           </h3>
-          <div class="d-flex jcsb alc mb-8">
-            <p>小計</p>
-            <p>NT$ 2,700</p>
-          </div>
-          <div class="d-flex jcsb alc mb-16">
-            <p>運費</p>
-            <p>NT$ 300</p>
-          </div>
-          <div class="d-flex jcsb alc">
-            <p class="text-m fw-b">總計</p>
-            <p class="text-m fw-b">NT$ 3,000</p>
+          <div class="order text-primary">
+            <div class="d-flex jcsb alc mb-8">
+              <p>小計</p>
+              <p>NT$ 2,700</p>
+            </div>
+            <div class="d-flex jcsb alc mb-16">
+              <p>運費</p>
+              <p>NT$ 300</p>
+            </div>
+            <div class="d-flex jcsb alc">
+              <p class="text-m fw-b">總計</p>
+              <p class="text-m fw-b">NT$ 3,000</p>
+            </div>
           </div>
         </div>
-        <div class="bg-link">
-          <a
-            href="payment.html"
-            class="text-primary min-65 py-20 text-l text-center fw-b"
-          >
-            結帳
-          </a>
+        <div class="orderInfo">
+          <h3 class="text-light text-m text-center fw-b bg-light min-65 lh-65">
+            購物清單
+          </h3>
+          <div class="orderList text-primary">
+            <div class="d-flex alc jcsb mb-16">
+              <img src="https://bit.ly/2QvsT63" alt="order1" class="mr-20" />
+              <div>
+                <p>焦糖馬卡龍（2）</p>
+                <p class="text-s fw-b">NT$ 900</p>
+              </div>
+            </div>
+            <div class="d-flex alc jcsb mb-16">
+              <img src="https://bit.ly/2QvsT63" alt="order2" class="mr-20" />
+              <div>
+                <p>焦糖馬卡龍（2）</p>
+                <p class="text-s fw-b">NT$ 900</p>
+              </div>
+            </div>
+            <div class="d-flex alc jcsb">
+              <img src="https://bit.ly/2QvsT63" alt="order3" class="mr-20" />
+              <div>
+                <p>焦糖馬卡龍（2）</p>
+                <p class="text-s fw-b">NT$ 900</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- 手機板價錢 -->
-    <div class="d-none d-mb-block mx-auto text-primary">
-      <div class="px-30">
-        <h3 class="text-l fw-b text-center bg-light min-65 lh-65 mb-16">
-          訂單摘要
-        </h3>
-        <div class="d-flex jcsb alc mb-8">
-          <p>小計</p>
-          <p>NT$ 2,700</p>
-        </div>
-        <div class="d-flex jcsb alc mb-16">
-          <p>運費</p>
-          <p>NT$ 300</p>
-        </div>
-        <div class="d-flex jcsb alc mb-16">
-          <p class="text-m fw-b">總計</p>
-          <p class="text-m fw-b">NT$ 3,000</p>
-        </div>
-      </div>
-      <a
-        href="payment.html"
-        class="text-center text-l text-primary fw-b min-65 lh-65 bg-link"
-      >
-        結帳
-      </a>
     </div>
     <div class="footer">
       <div class="register bg-dark">
@@ -331,7 +273,6 @@
         </div>
       </div>
     </div>
-
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

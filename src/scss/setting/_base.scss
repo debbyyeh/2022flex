@@ -9,18 +9,26 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+  // line-height: 20px;
   *,
   *::before,
   *::after {
-    line-height: 20px;
     box-sizing: border-box;
   }
-  input {
+  input,
+  select {
     -moz-appearance: none;
     outline: none;
     border-radius: 0;
     border: none;
     background-color: $second;
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 56px;
+    width: 100%;
+    &::-webkit-input-placeholder {
+      color: $text-color;
+    }
     &:focus {
       outline: none;
     }

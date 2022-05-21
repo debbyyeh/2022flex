@@ -1,5 +1,6 @@
-@import '../layout/header';
-@import '../layout/footer';
+@import '../setting/variable';
+@import '../setting/utilities';
+@import '../setting/base';
 
 // banner
 .bannerIndex {
@@ -171,8 +172,8 @@
     width: 100%;
     img {
       width: 196px;
-      aspect-ratio: 1/0.306;
       margin: 0 auto;
+      aspect-ratio: 1/0.306;
     }
   }
 }

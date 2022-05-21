@@ -1,0 +1,98 @@
+@import '../setting/variable';
+@import '../setting/utilities';
+@import '../setting/base';
+
+.payment-layout {
+  margin: 30px auto 65px auto;
+  padding: 30px;
+  @media (max-width: 767px) {
+    padding: 0;
+    margin: 0;
+  }
+}
+.progressInfo {
+  padding: 30px 40px;
+}
+.order,
+.orderList {
+  padding: 16px 20px;
+  border: 1px solid $second;
+}
+.orderList {
+  img {
+    width: 120px;
+    aspect-ratio: 1/0.67;
+    object-fit: cover;
+  }
+}
+.orderForm {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-bottom: 8px;
+  }
+  label,
+  input {
+    font-size: 20px;
+    color: $second;
+  }
+  input::placeholder {
+    padding-left: 20px;
+  }
+  select {
+    padding: 20px;
+  }
+}
+
+// progressBar
+.bar {
+  display: flex;
+  width: 180px;
+  li {
+    width: 33.3%;
+    position: relative;
+    text-align: center;
+  }
+}
+.bar {
+  li:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: 1px solid $text-color;
+    border-radius: 50%;
+    background-color: $primary;
+  }
+  li:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $text-color;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    // z-index: -1;
+    &:last-child:after {
+      content: none;
+    }
+  }
+  li {
+    &:nth-child(3):after {
+      content: none;
+    }
+  }
+}
+.barStep:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid $second;
+  background-color: $second;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}

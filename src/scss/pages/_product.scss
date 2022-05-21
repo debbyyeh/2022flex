@@ -1,5 +1,6 @@
-@import '../layout/header';
-@import '../layout/footer';
+@import '../setting/variable';
+@import '../setting/utilities';
+@import '../setting/base';
 
 .bannerProduct {
   max-width: 1000px;
@@ -25,6 +26,7 @@
     aspect-ratio: 1/3.65;
     @media (max-width: 768px) {
       width: 60px;
+      top: 20px;
     }
   }
 }
@@ -128,7 +130,26 @@
   aspect-ratio: 1/1;
   object-fit: cover;
 }
-
+.productItem {
+  min-height: 56px;
+  border-right: 1px solid $second;
+  border-left: 1px solid $second;
+}
+.itemName {
+  width: 60%;
+  padding: 18px 0;
+  border-right: 1px solid $second;
+}
+.price {
+  width: 40%;
+}
+.addCart {
+  min-height: 65px;
+  &:hover {
+    background-color: $primary;
+    color: $second;
+  }
+}
 //pagniation
 .pageButton {
   width: 30%;

@@ -1,3 +1,6 @@
+@import '../setting/variable';
+@import '../setting/utilities';
+
 // header
 .logoLink {
   width: 220px;
@@ -28,6 +31,7 @@
   }
 }
 .phoneBar {
+  display: none;
   @media (max-width: 767px) {
     display: block;
     display: flex;
@@ -44,8 +48,9 @@
   overflow: hidden;
   background-color: $primary;
   transition: max-height 1s;
-  li {
+  a {
     &:hover {
+      color: $primary;
       background-color: $link-color;
     }
   }

@@ -1,12 +1,5 @@
 @import './setting/reset';
-@import './setting/variable';
-@import './setting/utilities';
-@import './setting/base';
+@import './setting/grid';
 
 @import './layout/header';
 @import './layout/footer';
-
-@import './pages/index';
-@import './pages/product';
-@import './pages/login';
-@import './pages/cart';
