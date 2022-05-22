@@ -75,13 +75,6 @@
   padding-bottom: 20px;
 }
 
-@media (max-width: 900px) {
-  .p0 {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
 .p-30 {
   padding: 30px;
 }
@@ -94,18 +87,6 @@
 .py-30 {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.pt-30 {
-  padding-top: 30px;
-}
-
-.pb-30 {
-  padding-bottom: 30px;
-}
-
-.pb-20 {
-  padding-bottom: 20px;
 }
 
 .w-20 {

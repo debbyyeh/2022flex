@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- css -->
     <link rel="stylesheet" href="./dist/css/all.css" />
-    <link rel="stylesheet" href="./dist/css/payment.css" />
-
+    <link rel="stylesheet" href="../dist/css/orderComplete.css" />
     <!-- fontawesome/material -->
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;900&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
@@ -21,7 +19,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <title>甜點網-結帳頁面</title>
+    <title>甜點網-付款完成</title>
   </head>
   <body>
     <div class="PCbar container d-flex jcsb alc mx-auto p-30 d-mb-none">
@@ -85,112 +83,39 @@
         <i class="fas fa-solid fa-cart-shopping"></i>
       </a>
     </div>
-    <div class="payment-layout container d-flex jcc mx-auto">
-      <div class="col-md-6 col-sm-12">
-        <div class="progressInfo bg-dark">
-          <div class="d-flex alc jcsb mb-30">
-            <h2 class="text-xl text-second">運送</h2>
-            <div class="progressBar">
-              <ul class="bar">
-                <li>
-                  <span class="barStep"></span>
-                </li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
+    <div class="bannerComplete container mx-auto">
+      <div class="banner-complete">
+        <div class="col-mb-4">
+          <div class="progressBar">
+            <ul class="bar mb-30">
+              <li>
+                <i style="color: white;"></i>
+              </li>
+              <li><i style="color: white;"></i></li>
+              <li><i style="color: white;"></i></li>
+            </ul>
+            <h2 class="text-xl lh-36 text-primary fw-b text-center mb-60">
+              付款成功
+            </h2>
           </div>
-          <div class="form d-flex mb-16">
-            <div class="orderForm mr-8 w-50">
-              <label for="last-name">姓氏</label>
-              <input type="text" placeholder="王" />
-            </div>
-            <div class="orderForm d-flex w-50">
-              <label for="first-name">名字</label>
-              <input type="text" placeholder="小明" />
-            </div>
-          </div>
-          <div class="form mb-16">
-            <div class="orderForm">
-              <label for="tele">電話</label>
-              <input type="text" id="tele" placeholder="0912-345-678" />
-            </div>
-          </div>
-          <div class="form">
-            <div class="orderForm">
-              <label for="address">地址</label>
-              <div class="d-flex mb-8">
-                <select name="address" id="address" class="mr-8">
-                  <option value="Taipei">台北</option>
-                  <option value="Taichung">台中</option>
-                  <option value="Kaoshuang">高雄</option>
-                </select>
-                <select name="district" id="district">
-                  <option value="Sanchong">三重</option>
-                  <option value="Xinzhung">新莊</option>
-                  <option value="Xinyi">信義</option>
-                </select>
-              </div>
-              <input type="text" id="addressInfo" placeholder="幸福路 520 號" />
-            </div>
-          </div>
-        </div>
-        <a
-          href="orderComplete.html"
-          class="text-primary fw-b text-center bg-link text-m py-20 min-65"
-        >
-          下一步
-        </a>
-      </div>
-      <div class="col-md-4 d-mb-none">
-        <div class="orderAmount mb-20">
-          <h3 class="text-light text-m text-center fw-b bg-light min-65 lh-65">
-            訂單摘要
-          </h3>
-          <div class="order text-primary">
-            <div class="d-flex jcsb alc mb-8">
-              <p>小計</p>
-              <p>NT$ 2,700</p>
-            </div>
-            <div class="d-flex jcsb alc mb-16">
-              <p>運費</p>
-              <p>NT$ 300</p>
-            </div>
-            <div class="d-flex jcsb alc">
-              <p class="text-m fw-b">總計</p>
-              <p class="text-m fw-b">NT$ 3,000</p>
-            </div>
-          </div>
-        </div>
-        <div class="orderInfo">
-          <h3 class="text-light text-m text-center fw-b bg-light min-65 lh-65">
-            購物清單
-          </h3>
-          <div class="orderList text-primary">
-            <div class="d-flex alc jcsb mb-16">
-              <img src="https://bit.ly/2QvsT63" alt="order1" class="mr-20" />
-              <div>
-                <p>焦糖馬卡龍（2）</p>
-                <p class="text-s fw-b">NT$ 900</p>
-              </div>
-            </div>
-            <div class="d-flex alc jcsb mb-16">
-              <img src="https://bit.ly/2QvsT63" alt="order2" class="mr-20" />
-              <div>
-                <p>焦糖馬卡龍（2）</p>
-                <p class="text-s fw-b">NT$ 900</p>
-              </div>
-            </div>
-            <div class="d-flex alc jcsb">
-              <img src="https://bit.ly/2QvsT63" alt="order3" class="mr-20" />
-              <div>
-                <p>焦糖馬卡龍（2）</p>
-                <p class="text-s fw-b">NT$ 900</p>
-              </div>
-            </div>
+          <div class="d-mb-none">
+            <a
+              href="product.html"
+              class="text-primary text-center bg-link min-65 py-20 text-l fw-b"
+            >
+              繼續逛逛
+            </a>
           </div>
         </div>
       </div>
+    </div>
+    <div class="backtoProduct">
+      <a
+        href="product.html"
+        class="text-primary text-center bg-link min-65 py-20 text-l fw-b"
+      >
+        繼續逛逛
+      </a>
     </div>
     <div class="footer">
       <div class="register bg-dark">

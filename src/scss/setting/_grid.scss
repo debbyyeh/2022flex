@@ -1,16 +1,15 @@
 .container {
   max-width: 940px;
 }
-
 .col-md-6 {
   width: 55%;
   flex: 0 0 auto;
   padding-left: 10px;
   padding-right: 10px;
 }
-.col .col-md-4 {
-  @media (max-width: 992px) {
-    width: 40%;
+.col-md-4 {
+  @media (min-width: 768px) {
+    width: 35%;
     flex: 0 0 auto;
     padding-left: 10px;
     padding-right: 10px;
