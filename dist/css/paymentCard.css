@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mx-auto {
   margin: 0 auto;
 }
@@ -419,6 +420,18 @@ select {
 .bar li:active {
   color: #ffe180;
 }
+.bar i:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 2px;
+  left: 43px;
+}
+
+.done:before {
+  background-color: #8da291;
+}
 
 .bar li:before {
   content: "";
@@ -439,11 +452,14 @@ select {
   top: 10px;
   left: 0px;
 }
+.bar li:nth-child(1):before {
+  background-color: #8da291;
+}
 
 .barStep:before {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   border: 1px solid #eaf0ed;
   background-color: #eaf0ed;
   display: block;
