@@ -2,13 +2,13 @@
 @import '../setting/utilities';
 @import '../setting/base';
 
-.payment-layout {
+.paymentCard-layout {
   margin: 30px auto 65px auto;
   @media (max-width: 767px) {
     margin: 0;
   }
 }
-.progressInfo {
+.creditInfo {
   padding: 30px 40px;
 }
 .order,
@@ -23,9 +23,7 @@
     object-fit: cover;
   }
 }
-.orderForm {
-  display: flex;
-  flex-direction: column;
+.cardForm {
   label {
     margin-bottom: 8px;
     color: $second;
