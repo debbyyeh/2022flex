@@ -1,6 +1,4 @@
 @import '../setting/variable';
-@import '../setting/utilities';
-@import '../setting/base';
 
 .paymentReceipt-layout {
   margin: 30px auto 65px auto;
@@ -30,7 +28,6 @@
     font-size: 20px;
   }
   input {
-    font-size: 20px;
     color: $primary;
     padding-left: 20px;
   }
@@ -67,6 +64,7 @@
     position: absolute;
     top: 2px;
     left: 43px;
+    z-index: 2;
   }
 }
 .done:before {
@@ -82,6 +80,8 @@
     border-radius: 50%;
     background-color: $primary;
     margin-left: auto;
+    position: relative;
+    z-index: 1;
   }
   li:after {
     content: '';
@@ -91,7 +91,6 @@
     position: absolute;
     top: 10px;
     left: 0px;
-    // z-index: -1;
   }
   li {
     &:nth-child(-n + 2):before {
@@ -108,6 +107,7 @@
   display: block;
   border-radius: 50%;
   position: absolute;
-  top: 5px;
-  left: 45px;
+  top: 3px;
+  left: 43px;
+  z-index: 1;
 }

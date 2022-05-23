@@ -1,3 +1,30 @@
+// 顏色
+
+$primary: #3f5d45;
+$second: #eaf0ed;
+$link-color: #ffe180;
+$text-color: #8da291;
+$white: white;
+
+// 間距
+$spacer: 16px;
+
+$xxs: $spacer * 0.25;
+// 4
+$xs: $spacer * 0.5;
+// 8
+$s: $spacer * 0.75;
+// 12
+$m: $spacer * 1.25;
+// 20
+$l: $spacer * 1.5;
+// 24
+$xl: $spacer * 1.875;
+// 30
+$xxl: $spacer * 2;
+// 32
+$xxxl: $spacer * 2.25;
+// 36
 // 距離
 .mx-auto {
   margin: 0 auto;
