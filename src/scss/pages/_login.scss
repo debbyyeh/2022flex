@@ -34,12 +34,6 @@
           }
         }
       }
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 56px;
-      }
     }
   }
 }
@@ -57,26 +51,23 @@
   input {
     background-color: $second;
     width: 100%;
+    padding-left: 50px;
+    min-height: 56px;
   }
 }
 .loginAccount {
   background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/user-solid.svg')
     4%/16px no-repeat;
-  min-height: 56px;
-  padding-left: 45px;
 }
 .loginPassword {
   background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/vpn_key_FILL0_wght400_GRAD0_opsz48.svg')
     4%/16px no-repeat;
-  min-height: 56px;
-  padding-left: 45px;
 }
 .checkGroup {
   display: flex;
   align-items: center;
   input {
     color: $second;
-    line-height: 36px;
   }
 }
 .enterBtn {
@@ -97,25 +88,25 @@
       margin-bottom: 16px;
     }
   }
+}
+// facebook
+.facebook {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 56px;
+    width: 100%;
+    max-height: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    &:active {
+      background-color: $link-color;
+    }
   }
-  .facebook {
+  img {
     width: 38%;
+    margin: 0 auto;
     aspect-ratio: 1/0.19;
-    @media (max-width: 767px) {
-      width: 40%;
-    }
-    @media (max-width: 576px) {
-      width: 60%;
-    }
-  }
-  .google {
-    width: 33%;
-    aspect-ratio: 1/0.33;
     @media (max-width: 767px) {
       width: 60%;
     }
@@ -123,8 +114,42 @@
       width: 80%;
     }
   }
-  .yahoo {
+}
+.google {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  a {
+    width: 100%;
+    max-height: 56px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  img {
+    width: 33%;
+    margin: 0 auto;
+    aspect-ratio: 1/0.3;
+    @media (max-width: 767px) {
+      width: 60%;
+    }
+    @media (max-width: 576px) {
+      width: 80%;
+    }
+  }
+}
+.yahoo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  a {
+    width: 100%;
+    max-height: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  img {
     width: 30%;
+    margin: 0 auto;
     aspect-ratio: 1/0.23;
     @media (max-width: 767px) {
       width: 60%;

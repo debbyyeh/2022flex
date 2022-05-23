@@ -31,16 +31,39 @@
     color: $primary;
     padding-left: 20px;
   }
+  select {
+    padding-left: 20px;
+    background: url('https://upload.cc/i1/2022/05/22/BC2WVw.png') no-repeat
+      center;
+    background-position: 90% center;
+    background-color: $second;
+  }
 }
-.E-receipt,
-.paper-receipt {
+.E-receiptButton,
+.paper-receiptButton {
   width: 50%;
   border: 1px solid $second;
   text-align: center;
+  color: $second;
   font-size: 20px;
   font-weight: bold;
   padding: 14px;
-  margin-bottom: 30px;
+  background-color: $primary;
+}
+// .E-receiptButton {
+//   background-color: $second;
+//   color: $primary;
+// }
+.E-receiptButton.active {
+  background-color: $second;
+  color: $primary;
+}
+.paper-receiptButton.active {
+  background-color: $second;
+  color: $primary;
+}
+.paperShow {
+  display: none;
 }
 // progressBar
 .bar {

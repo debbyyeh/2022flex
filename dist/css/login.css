@@ -40,19 +40,6 @@
   border-right: 1px solid #eaf0ed;
   border-left: 1px solid #eaf0ed;
 }
-.accountInput .MBsocial ul a,
-.inputSocial .MBsocial ul a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 56px;
-}
 
 .inputLogin {
   padding: 0 30px 25px 30px;
@@ -72,18 +59,16 @@
 .formGroup input {
   background-color: #eaf0ed;
   width: 100%;
+  padding-left: 50px;
+  min-height: 56px;
 }
 
 .loginAccount {
   background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/user-solid.svg") 4%/16px no-repeat;
-  min-height: 56px;
-  padding-left: 45px;
 }
 
 .loginPassword {
   background: url("https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/vpn_key_FILL0_wght400_GRAD0_opsz48.svg") 4%/16px no-repeat;
-  min-height: 56px;
-  padding-left: 45px;
 }
 
 .checkGroup {
@@ -96,7 +81,6 @@
 }
 .checkGroup input {
   color: #eaf0ed;
-  line-height: 36px;
 }
 
 .enterBtn {
@@ -116,57 +100,102 @@
 .inputSocial li:nth-child(1), .inputSocial li:nth-child(2) {
   margin-bottom: 16px;
 }
-.inputSocial a {
+
+.facebook {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 56px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
-.inputSocial .facebook {
+.facebook a {
+  width: 100%;
+  max-height: 56px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.facebook a:active {
+  background-color: #ffe180;
+}
+.facebook img {
   width: 38%;
+  margin: 0 auto;
   aspect-ratio: 1/0.19;
 }
 @media (max-width: 767px) {
-  .inputSocial .facebook {
-    width: 40%;
-  }
-}
-@media (max-width: 576px) {
-  .inputSocial .facebook {
-    width: 60%;
-  }
-}
-.inputSocial .google {
-  width: 33%;
-  aspect-ratio: 1/0.33;
-}
-@media (max-width: 767px) {
-  .inputSocial .google {
+  .facebook img {
     width: 60%;
   }
 }
 @media (max-width: 576px) {
-  .inputSocial .google {
+  .facebook img {
     width: 80%;
   }
 }
-.inputSocial .yahoo {
-  width: 30%;
-  aspect-ratio: 1/0.23;
+
+.google {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.google a {
+  width: 100%;
+  max-height: 56px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.google img {
+  width: 33%;
+  margin: 0 auto;
+  aspect-ratio: 1/0.3;
 }
 @media (max-width: 767px) {
-  .inputSocial .yahoo {
+  .google img {
     width: 60%;
   }
 }
 @media (max-width: 576px) {
-  .inputSocial .yahoo {
+  .google img {
+    width: 80%;
+  }
+}
+
+.yahoo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.yahoo a {
+  width: 100%;
+  max-height: 56px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.yahoo img {
+  width: 30%;
+  margin: 0 auto;
+  aspect-ratio: 1/0.23;
+}
+@media (max-width: 767px) {
+  .yahoo img {
+    width: 60%;
+  }
+}
+@media (max-width: 576px) {
+  .yahoo img {
     width: 80%;
   }
 }

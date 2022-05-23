@@ -45,9 +45,6 @@
 
 select {
   padding: 20px;
-  min-height: 56px;
-  font-size: 20px;
-  color: #8da291;
   background: url("https://upload.cc/i1/2022/05/22/BC2WVw.png") no-repeat center;
   background-position: 90% center;
 }

@@ -168,6 +168,10 @@ table {
   margin: 0 auto;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .mb-4 {
   margin-bottom: 4px;
 }
@@ -505,6 +509,7 @@ body select {
   border: none;
   background-color: #eaf0ed;
   font-size: 16px;
+  color: #8da291;
   line-height: 1.25;
   min-height: 56px;
   width: 100%;
@@ -516,6 +521,10 @@ body select::-webkit-input-placeholder {
 body input:focus,
 body select:focus {
   outline: none;
+}
+body input[type=checkbox] {
+  width: 20px;
+  min-height: 20px;
 }
 body button {
   -moz-appearance: none;

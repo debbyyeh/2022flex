@@ -29,7 +29,7 @@
   }
   input {
     color: $primary;
-    padding-left: 20px;
+    padding: 0 20px;
   }
 }
 select {
@@ -40,7 +40,13 @@ select {
   background: url('https://upload.cc/i1/2022/05/22/BC2WVw.png') no-repeat center;
   background-position: 90% center;
 }
-
+.creditCard {
+  background: url('https://raw.githubusercontent.com/debbyyeh/2022flex/main/dist/images/credit-card-solid.svg')
+    2%/16px no-repeat;
+  background-position: 95% center;
+  padding-right: 20px;
+  background-color: $second;
+}
 // progressBar
 .bar {
   display: flex;

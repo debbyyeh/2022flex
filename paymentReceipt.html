@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/css/all.css" />
-    <link rel="stylesheet" href="./dist/css/paymentReceipt.css" />
-    <!-- fontawesome/material -->
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;900&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
@@ -19,6 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="./dist/css/all.css" />
+    <link rel="stylesheet" href="./dist/css/paymentReceipt.css" />
+    <!-- fontawesome/material -->
+
     <title>甜點網-收據頁面</title>
   </head>
   <body>
@@ -78,6 +79,11 @@
             登入
           </a>
         </li>
+        <li>
+          <a href="#" target="_blank" class="fw-b text-white text-center p-30">
+            查看訂單
+          </a>
+        </li>
       </ul>
       <a href="cart.html" class="shopMB">
         <i class="fas fa-solid fa-cart-shopping"></i>
@@ -102,22 +108,56 @@
               </ul>
             </div>
           </div>
-          <div class="receipt d-flex">
-            <a href="" class="E-receipt text-primary bg-light">
-              電子發票
-            </a>
-            <a href="" class="paper-receipt text-second">郵寄發票</a>
-          </div>
-          <div class="form mb-16">
-            <div class="receiptForm">
-              <label for="email">電子郵件信箱</label>
-              <input type="email" placeholder="example@email.com" />
+          <div class="receipt">
+            <div class="receiptButton d-flex mb-30">
+              <a href="" class="E-receiptButton" id="E-receiptButton">
+                電子發票
+              </a>
+              <a href="" class="paper-receiptButton" id="paper-receiptButton">
+                郵寄發票
+              </a>
             </div>
-          </div>
-          <div class="form">
-            <div class="receiptForm">
-              <label for="ID number">統一編號（選填）</label>
-              <input type="text" id="ID number" placeholder="12345678" />
+            <div class="E-receiptContent" id="E-receiptContent">
+              <div class="form mb-16">
+                <div class="receiptForm">
+                  <label for="email">電子郵件信箱</label>
+                  <input type="email" placeholder="example@email.com" />
+                </div>
+              </div>
+              <div class="form">
+                <div class="receiptForm">
+                  <label for="ID number">統一編號（選填）</label>
+                  <input type="text" id="ID number" placeholder="12345678" />
+                </div>
+              </div>
+            </div>
+            <div class="paper-receiptContent d-none" id="paper-receiptContent">
+              <div class="receiptForm mb-16">
+                <div class="d-flex jcsb">
+                  <label for="address">地址</label>
+                  <div class="d-flex alc mb-8">
+                    <input type="checkbox" name="" id="" class="mr-8" />
+                    <label for="" class="text-second" style="margin-bottom: 0;">
+                      同運送地址
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex mb-8">
+                  <select name="city" id="city" class="mr-8 w-50">
+                    <option value="Kaohsung">高雄市</option>
+                    <option value="Taipei">台北市</option>
+                  </select>
+                  <select name="district" id="district" class="w-50">
+                    <option value="新興區">新興區</option>
+                    <option value="前鎮區">前鎮區</option>
+                  </select>
+                </div>
+                <input type="text" name="" id="" placeholder="幸福路 520 號" />
+              </div>
+              <div class="receiptForm">
+                <label for="tax ID">統一編號（選填）</label>
+                <input type="text" placeholder="12345678" />
+              </div>
             </div>
           </div>
         </div>
@@ -270,6 +310,7 @@
         </div>
       </div>
     </div>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

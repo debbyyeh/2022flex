@@ -217,3 +217,7 @@
   border: 1px solid #eaf0ed;
   color: #3f5d45;
 }
+.pageButton a:active {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
